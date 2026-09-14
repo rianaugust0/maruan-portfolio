@@ -1206,11 +1206,11 @@
 
 @media (max-width: 430px) {
   .hero-sondagem-title {
-    font-size: clamp(2rem, 8vw, 2.4rem);
+    font-size: clamp(1.9rem, 7.5vw, 2.4rem);
   }
 
   .quebra-headline-giant {
-    font-size: clamp(2.8rem, 12vw, 3.8rem);
+    font-size: clamp(2.4rem, 10.5vw, 3.6rem);
   }
 
   .sondagem-faq-summary {
@@ -1236,6 +1236,6 @@
   }
 
   .hero-sondagem-title {
-    font-size: 1.95rem;
+    font-size: 1.85rem;
   }
 }

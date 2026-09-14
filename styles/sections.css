@@ -459,7 +459,17 @@
 /* ============ FILOSOFIA DE ATUAÇÃO (A FORMA DE CUIDAR) ============ */
 .cuidado {
   padding: 130px 0 140px;
-  background: linear-gradient(170deg, var(--petrol) 0%, var(--deep) 100%);
+  background: radial-gradient(
+    circle at 45% 35%,
+    rgba(40, 82, 91, 0.28) 0%,
+    rgba(18, 51, 63, 0) 52%
+  ),
+  linear-gradient(
+    135deg,
+    #0D2933 0%,
+    #12333F 48%,
+    #0B2731 100%
+  );
   color: var(--off);
   position: relative;
   overflow: hidden;
@@ -475,9 +485,11 @@
   right: -5%;
   width: 500px;
   height: 500px;
-  border: 1px solid rgba(245, 246, 242, 0.04);
+  border: 1px solid rgba(169, 184, 174, 0.09);
   transform: rotate(45deg);
   pointer-events: none;
+  mask-image: radial-gradient(circle at 45% 35%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0.2) 80%);
+  -webkit-mask-image: radial-gradient(circle at 45% 35%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0.2) 80%);
 }
 
 .cuidado-opening {
