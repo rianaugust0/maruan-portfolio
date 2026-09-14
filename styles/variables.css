@@ -41,44 +41,21 @@ body {
   font-weight: 500;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-  letter-spacing: -0.015em;
-  color: var(--deep);
-  font-weight: 600;
-}
-
-p {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a:focus-visible, button:focus-visible {
-  outline: 2px solid var(--petrol);
-  outline-offset: 3px;
-  border-radius: 2px;
+p, a, span, h1, h2, h3, h4, blockquote {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    padding: 0 20px;
+  }
 }
 
 /* Motion & Reveal System (Opacidade simples sem cortar imagens) */

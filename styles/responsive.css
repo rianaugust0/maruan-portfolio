@@ -8,8 +8,35 @@
     padding: 16px 0;
   }
 
+  .nav-inner {
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .nav-brand {
+    max-width: calc(100% - 54px);
     margin-right: 0;
+    overflow: hidden;
+  }
+
+  .nav-brand .txt {
+    overflow: hidden;
+  }
+
+  .nav-brand .name {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-brand .role,
+  .nav-brand .sub-service-tag {
+    font-size: 0.62rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .nav-links {
