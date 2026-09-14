@@ -1,0 +1,13 @@
+[build]
+  command = "bun run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/curativos-domiciliares-goiania"
+  to = "/curativos-domiciliares-goiania/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/passagem-de-sonda-goiania"
+  to = "/passagem-de-sonda-goiania/index.html"
+  status = 200

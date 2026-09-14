@@ -1,3 +1,6 @@
+// Ativar sistema de revelação apenas com JavaScript carregado com sucesso
+document.documentElement.classList.add('js-ready');
+
 // Header Scroll State
 const nav = document.getElementById('siteNav');
 const onScroll = () => {

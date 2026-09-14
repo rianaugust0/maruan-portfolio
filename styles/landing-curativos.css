@@ -831,6 +831,7 @@
     grid-template-columns: 1fr;
     gap: 32px;
   }
+}
 
 @media (max-width: 680px) {
   .maruan-portrait-frame {

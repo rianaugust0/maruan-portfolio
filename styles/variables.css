@@ -58,25 +58,36 @@ p, a, span, h1, h2, h3, h4, blockquote {
   }
 }
 
-/* Motion & Reveal System (Opacidade simples sem cortar imagens) */
+/* Motion & Reveal System (Progressive Enhancement - Visível por Padrão) */
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.reveal.in {
+.reveal-mask {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Ocultar inicialmente apenas se o JavaScript tiver sido carregado com sucesso */
+html.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+html.js-ready .reveal.in {
   opacity: 1;
   transform: translateY(0);
 }
 
-.reveal-mask {
+html.js-ready .reveal-mask {
   opacity: 0;
   transform: scale(0.98);
-  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.reveal-mask.in {
+html.js-ready .reveal-mask.in {
   opacity: 1;
   transform: scale(1);
 }
