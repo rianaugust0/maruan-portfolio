@@ -1184,12 +1184,56 @@
   }
 }
 
+@media (max-width: 480px) {
+  .btn-primary-sondagem,
+  .btn-outline-sondagem,
+  .btn-dark-sondagem {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-sondagem-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tipo-hero-featured {
+    padding: 28px 20px;
+  }
+}
+
 @media (max-width: 430px) {
   .hero-sondagem-title {
-    font-size: 2.2rem;
+    font-size: clamp(2rem, 8vw, 2.4rem);
   }
 
   .quebra-headline-giant {
-    font-size: 3.8rem;
+    font-size: clamp(2.8rem, 12vw, 3.8rem);
+  }
+
+  .sondagem-faq-summary {
+    padding: 16px 18px;
+  }
+
+  .sondagem-faq-answer {
+    padding: 0 18px 18px;
+  }
+
+  .ambiente-strip-editorial {
+    padding: 24px 0;
+  }
+
+  .strip-item-name {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .landing-sondagem .wrap {
+    padding: 0 16px;
+  }
+
+  .hero-sondagem-title {
+    font-size: 1.95rem;
   }
 }
