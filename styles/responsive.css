@@ -189,14 +189,14 @@
 
   .sobre-photo-wrap {
     height: auto;
-    aspect-ratio: 4 / 3.2;
-    max-height: 280px;
+    aspect-ratio: 3 / 4;
+    max-height: 420px;
     width: 100%;
     transform: none;
   }
 
   .sobre-photo-wrap img {
-    object-position: center 15%;
+    object-position: center top;
   }
 
   .sobre-copy {
@@ -285,19 +285,22 @@
 
   .cta-photo-blend {
     height: auto;
-    aspect-ratio: 4 / 3.2;
-    max-height: 280px;
+    aspect-ratio: 3 / 4;
+    max-height: 420px;
     width: 100%;
   }
 
   .cta-photo-blend img {
     mask-image: none;
     -webkit-mask-image: none;
-    object-position: center 15%;
+    object-position: center top;
   }
 
   .sobre-photo-wrap {
-    height: 380px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    max-height: 420px;
+    width: 100%;
     transform: none;
   }
 

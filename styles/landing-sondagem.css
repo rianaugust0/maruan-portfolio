@@ -1162,8 +1162,8 @@
 @media (max-width: 680px) {
   .maruan-photo-frame-sondagem {
     max-width: 100%;
-    aspect-ratio: 4 / 3.4;
-    max-height: 280px;
+    aspect-ratio: 3 / 4;
+    max-height: 420px;
     margin: 0 auto;
   }
 
