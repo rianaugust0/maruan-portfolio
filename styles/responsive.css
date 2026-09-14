@@ -5,17 +5,24 @@
   }
 
   header.nav {
-    padding: 16px 0;
+    padding: 12px 0;
+    background: rgba(245, 246, 242, 0.96);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .nav-inner {
     padding: 0 20px;
     width: 100%;
+    height: 52px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav-brand {
-    max-width: calc(100% - 54px);
+    max-width: calc(100% - 52px);
     margin-right: 0;
     overflow: hidden;
   }
@@ -25,7 +32,7 @@
   }
 
   .nav-brand .name {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -64,23 +71,108 @@
 
   .nav-toggle {
     display: block;
+    z-index: 1002;
   }
 
-  /* Hero Mobile */
+  /* Hero Mobile — Redesenho de Composição e Espaçamento */
   .hero {
     flex-direction: column;
     min-height: auto;
-    margin-top: 68px;
+    margin-top: 76px;
+    padding-top: 24px;
     overflow: hidden;
   }
 
   .hero-content-col {
     width: 100%;
-    padding: 50px 24px 40px;
+    padding: 16px 20px 32px;
+    box-sizing: border-box;
+  }
+
+  .hero-eyebrow-commercial {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
   }
 
   .hero h1 {
-    font-size: clamp(2.1rem, 8.5vw, 2.6rem);
+    font-size: clamp(2rem, 7.5vw, 2.5rem);
+    line-height: 1.14;
+    margin-bottom: 18px;
+  }
+
+  .hero h1 .main-q {
+    font-size: 1em;
+    margin-bottom: 6px;
+  }
+
+  .hero h1 .sub-serif {
+    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
+    line-height: 1.35;
+  }
+
+  .hero-sub {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 0.98rem;
+    line-height: 1.62;
+    opacity: 0.88;
+  }
+
+  .hero-actions {
+    margin-top: 0;
+    margin-bottom: 32px;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .btn-fill {
+    width: 100%;
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.98rem;
+    font-weight: 700;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .btn-ghost {
+    width: 100%;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.92rem;
+    font-weight: 600;
+    border: 1px solid var(--hair);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--petrol);
+    background: transparent;
+  }
+
+  .hero-micro-info {
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding-top: 24px;
+    border-top: 1.5px solid var(--hair);
+    justify-content: space-around;
+    gap: 12px;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-signature-accent {
+    position: static;
+    margin-top: 14px;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    opacity: 0.75;
   }
 
   .hero-photo-col {
@@ -90,13 +182,43 @@
     bottom: auto;
     width: 100%;
     height: auto;
-    aspect-ratio: 3 / 4;
-    max-height: 420px;
+    aspect-ratio: 4 / 3.4;
+    max-height: 340px;
+    margin-top: 8px;
     clip-path: none;
+    border-radius: 4px;
+    overflow: hidden;
   }
 
   .hero-photo-col img {
-    object-position: center top;
+    object-position: center 10%;
+  }
+
+  .photo-badge {
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    width: auto;
+    font-size: 0.68rem;
+    line-height: 1.35;
+    text-align: center;
+    padding: 8px 12px;
+  }
+
+  .frame-mark.tl {
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    border-width: 1.5px;
+  }
+
+  .frame-mark.br {
+    bottom: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    border-width: 1.5px;
   }
 
   /* Necessidade Mobile */
