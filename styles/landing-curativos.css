@@ -832,30 +832,14 @@
     gap: 32px;
   }
 
+@media (max-width: 680px) {
   .maruan-portrait-frame {
-    max-width: 320px;
+    max-width: 100%;
+    aspect-ratio: 4 / 3.4;
+    max-height: 280px;
     margin: 0 auto;
   }
 
-  .regiao-layout-v2, .faq-layout-v2 {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .fechamento-dark-layout-v2 {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .brand-mark-box {
-    align-items: flex-start;
-    text-align: left;
-    border-left: none;
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 680px) {
   .hero-v2-dark {
     padding: 110px 0 60px;
   }

@@ -89,9 +89,14 @@
     right: auto;
     bottom: auto;
     width: 100%;
-    height: 48vh;
-    min-height: 320px;
+    height: auto;
+    aspect-ratio: 4 / 3.2;
+    max-height: 280px;
     clip-path: none;
+  }
+
+  .hero-photo-col img {
+    object-position: center 15%;
   }
 
   /* Necessidade Mobile */
@@ -183,7 +188,15 @@
   }
 
   .sobre-photo-wrap {
-    height: 380px;
+    height: auto;
+    aspect-ratio: 4 / 3.2;
+    max-height: 280px;
+    width: 100%;
+    transform: none;
+  }
+
+  .sobre-photo-wrap img {
+    object-position: center 15%;
   }
 
   .sobre-copy {
@@ -271,12 +284,16 @@
   }
 
   .cta-photo-blend {
-    height: 380px;
+    height: auto;
+    aspect-ratio: 4 / 3.2;
+    max-height: 280px;
+    width: 100%;
   }
 
   .cta-photo-blend img {
     mask-image: none;
     -webkit-mask-image: none;
+    object-position: center 15%;
   }
 
   .sobre-photo-wrap {

@@ -1159,12 +1159,14 @@
     gap: 48px;
   }
 
-  .maruan-photo-frame-sondagem {
-    max-width: 360px;
-  }
-}
-
 @media (max-width: 680px) {
+  .maruan-photo-frame-sondagem {
+    max-width: 100%;
+    aspect-ratio: 4 / 3.4;
+    max-height: 280px;
+    margin: 0 auto;
+  }
+
   .sec-hero-sondagem {
     padding: 120px 0 70px;
   }
