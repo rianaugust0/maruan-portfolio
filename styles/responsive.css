@@ -1,0 +1,288 @@
+/* ============ RESPONSIVIDADE ============ */
+@media (max-width: 960px) {
+  .signature-line {
+    display: none;
+  }
+
+  header.nav {
+    padding: 16px 0;
+  }
+
+  .nav-brand {
+    margin-right: 0;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(78vw, 320px);
+    background: var(--off);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 32px 32px;
+    gap: 26px;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(.2, .7, .2, 1);
+    box-shadow: -12px 0 40px rgba(13, 41, 51, 0.12);
+    z-index: 1001;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Hero Mobile */
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+    margin-top: 68px;
+  }
+
+  .hero-content-col {
+    width: 100%;
+    padding: 50px 24px 40px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 8.5vw, 2.6rem);
+  }
+
+  .hero-photo-col {
+    position: relative;
+    width: 100%;
+    height: 48vh;
+    min-height: 320px;
+    clip-path: none;
+  }
+
+  /* Necessidade Mobile */
+  .necessidade {
+    padding: 80px 0;
+  }
+
+  .necessidade-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .necessidade-right {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1.5px solid var(--hair);
+    padding-top: 28px;
+  }
+
+  /* Atendimentos Mobile */
+  .atendimentos {
+    padding: 80px 0;
+  }
+
+  .atendimento-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 32px 16px;
+  }
+
+  .atendimento-num {
+    font-size: 2.2rem;
+  }
+
+  .link-editorial-cta {
+    align-self: flex-start;
+    margin-top: 6px;
+  }
+
+  .atendimento-row:hover {
+    padding-left: 16px;
+  }
+
+  /* Acompanhamento Mobile */
+  .acompanhamento {
+    padding: 80px 0;
+  }
+
+  .acompanhamento-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .editorial-highlight-card {
+    padding: 36px 28px;
+    gap: 28px;
+  }
+
+  /* Como Funciona Mobile */
+  .como-funciona {
+    padding: 80px 0;
+  }
+
+  .como-funciona-flow {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 52px;
+  }
+
+  .step-num {
+    font-size: 2.6rem;
+  }
+
+  .como-funciona-closing {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 36px 28px;
+    gap: 24px;
+  }
+
+  /* Sobre Mobile */
+  .sobre {
+    padding: 76px 0;
+  }
+
+  .sobre-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .sobre-photo-wrap {
+    height: 380px;
+  }
+
+  .sobre-copy {
+    padding-left: 0;
+  }
+
+  /* Cuidado Manifesto Mobile */
+  .cuidado {
+    padding: 90px 0;
+    min-height: auto;
+  }
+
+  .cuidado-opening {
+    margin-bottom: 52px;
+  }
+
+  .cuidado-manifesto-stack {
+    gap: 44px;
+  }
+
+  .cuidado-principle.pos-1,
+  .cuidado-principle.pos-2,
+  .cuidado-principle.pos-3 {
+    width: 100%;
+    margin-left: 0;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+  }
+
+  .cuidado-num-mark {
+    font-size: 3rem;
+  }
+
+  /* Autoridade (Formação & Atualização) Mobile */
+  .autoridade {
+    padding: 80px 0;
+  }
+
+  .timeline-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 32px 0;
+  }
+
+  .timeline-year .yr {
+    font-size: 2.2rem;
+  }
+
+  .cert-nucleus {
+    padding: 34px 26px;
+  }
+
+  .cert-nucleus-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cert-nucleus-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* FAQ Mobile */
+  .faq-section {
+    padding: 80px 0;
+  }
+
+  .faq-question {
+    padding: 24px 0;
+  }
+
+  /* Contato Mobile */
+  .cta-final {
+    padding: 90px 0 48px;
+  }
+
+  .cta-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cta-text {
+    padding-right: 0;
+  }
+
+  .cta-photo-blend {
+    height: 380px;
+  }
+
+  .cta-photo-blend img {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .sobre-photo-wrap {
+    height: 380px;
+    transform: none;
+  }
+
+  .como-funciona-closing {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 680px) {
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 2.4rem);
+  }
+
+  .necessidade-editorial-quote .quote-main {
+    font-size: clamp(1.8rem, 6.5vw, 2.4rem);
+  }
+
+  .cuidado-principle {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cuidado-num-mark {
+    font-size: 2.4rem;
+  }
+
+  .btn-whatsapp-brand {
+    width: 100%;
+    justify-content: center;
+  }
+}

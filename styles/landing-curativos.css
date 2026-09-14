@@ -1,0 +1,896 @@
+/* ==========================================================================
+   LANDING PAGE: CURATIVOS DOMICILIARES EM GOIÂNIA (LAPIDAÇÃO VISUAL FINAL)
+   Design autoral, editorial, limpo, desencaixotado e com alto espaço negativo.
+   ========================================================================== */
+
+.landing-curativos-v2 {
+  background-color: var(--off);
+  overflow-x: hidden;
+}
+
+/* Header Sub-service Tag */
+.nav-landing-v2 .sub-service-tag {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--sage);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.mark-diamond-v2 {
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid var(--sage);
+  background: transparent;
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+/* Base Eyebrow System */
+.eyebrow-v2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--petrol);
+  margin-bottom: 16px;
+}
+
+.eyebrow-v2 .folio {
+  opacity: 0.55;
+}
+
+.eyebrow-v2-dark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   1. HERO V2 (PROCEDIMENTO EM PROTAGONISMO - IMAGEM SILENCIOSA)
+   ========================================================================== */
+.hero-v2-dark {
+  padding: 130px 0 90px;
+  background: var(--deep);
+  color: var(--off);
+  position: relative;
+  border-bottom: 1px solid rgba(220, 231, 234, 0.1);
+}
+
+.hero-v2-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.service-eyebrow-v2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--sage);
+  margin-bottom: 24px;
+}
+
+.hero-v2-title {
+  margin-bottom: 24px;
+}
+
+.hero-v2-title .title-main {
+  display: block;
+  font-size: clamp(2.3rem, 3.8vw, 3.3rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-v2-title .title-sub-serif {
+  display: block;
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.4;
+  color: var(--sage);
+  font-weight: 400;
+}
+
+.hero-v2-lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--slate);
+  opacity: 0.9;
+  margin-bottom: 36px;
+  max-width: 600px;
+}
+
+.hero-v2-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.btn-primary-v2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--sage);
+  color: var(--deep);
+  padding: 18px 30px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary-v2:hover {
+  background: var(--white);
+  color: var(--deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.btn-secondary-v2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--slate);
+  padding: 12px 16px;
+  transition: color 0.2s ease;
+}
+
+.btn-secondary-v2:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.hero-v2-specs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--sage);
+  opacity: 0.85;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.hero-v2-specs .spec-sep {
+  opacity: 0.4;
+}
+
+.portrait-container-v2.hero-procedure-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  background: var(--petrol);
+}
+
+.portrait-container-v2.hero-procedure-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   2. RECONHECIMENTO RÁPIDO (4 COLUNAS EDITORIAIS ABERTAS - SEM CAIXAS)
+   ========================================================================== */
+.sec-v2-reconhecimento {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.v2-section-head {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.v2-section-head h2 {
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  line-height: 1.18;
+  color: var(--deep);
+  margin-bottom: 16px;
+}
+
+.v2-intro-txt {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--graphite);
+  opacity: 0.9;
+}
+
+.reconhecimento-grid-4-v2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  border-top: 1px solid var(--hair);
+  padding-top: 36px;
+}
+
+.reconhecimento-box-v2 {
+  background: transparent;
+  padding: 0 16px 0 0;
+  border: none;
+  border-right: 1px solid var(--hair);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.reconhecimento-box-v2:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.reconhecimento-box-v2 .item-num-v2 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--petrol);
+  margin-bottom: 12px;
+  display: block;
+  line-height: 1;
+}
+
+.reconhecimento-box-v2 .item-txt-v2 {
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: var(--deep);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================================================================
+   3. ATENDIMENTO DE CURATIVOS (TRILHA EDITORIAL SEM CAIXA BRANCA)
+   ========================================================================== */
+.sec-v2-fluxo-servico {
+  padding: 100px 0;
+  background: var(--slate-light);
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+}
+
+.fluxo-layout-editorial-v2 {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.disclaimer-inline-v2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--petrol);
+  opacity: 0.85;
+  margin-top: 28px;
+}
+
+.trilha-flow-v2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 36px;
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+  padding: 24px 0;
+}
+
+.trilha-item-v2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trilha-item-v2 .trilha-num {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--sage);
+}
+
+.trilha-item-v2 .trilha-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--deep);
+}
+
+.trilha-connector {
+  font-size: 1.2rem;
+  color: var(--sage);
+  opacity: 0.6;
+}
+
+.btn-accent-v2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--petrol);
+  color: var(--white);
+  padding: 16px 28px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-accent-v2:hover {
+  background: var(--deep);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   4. BANNER DARK DE CONVERSÃO (3 COLUNAS)
+   ========================================================================== */
+.sec-v2-banner-dark {
+  padding: 90px 0;
+  background: var(--petrol);
+  color: var(--off);
+}
+
+.banner-dark-3col {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.banner-title-v2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.3rem);
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.banner-quote-v2 {
+  margin: 0 0 16px 0;
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--sage);
+  line-height: 1.35;
+}
+
+.banner-sub-txt-v2 {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--slate);
+  opacity: 0.85;
+}
+
+.banner-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.micro-reassurance {
+  font-size: 0.78rem;
+  color: var(--sage);
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   5. COMO FUNCIONA (LINHA DO TEMPO TIPOGRÁFICA 01-04)
+   ========================================================================== */
+.sec-v2-como-funciona {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.timeline-v2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.step-v2 {
+  padding-top: 20px;
+  border-top: 2px solid var(--slate);
+}
+
+.step-v2 .step-num-v2 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--petrol);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.step-v2 h3 {
+  font-size: 1.1rem;
+  color: var(--deep);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.step-v2 p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--graphite);
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   6. O ENFERMEIRO RESPONSÁVEL (CREDENCIAIS EDITORIAIS LIMPAS - SEM CARDS/EMOJIS)
+   ========================================================================== */
+.sec-v2-autoridade {
+  padding: 100px 0;
+  background: var(--off);
+  border-top: 1px solid var(--hair);
+}
+
+.title-enfermeiro-resp {
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  color: var(--deep);
+  margin-bottom: 40px;
+}
+
+.autoridade-v2-3col {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.autoridade-col-bio .body-v2 {
+  font-size: 0.98rem;
+  line-height: 1.68;
+  color: var(--graphite);
+  margin-bottom: 16px;
+}
+
+.signature-quote-v2 {
+  margin: 24px 0 0 0;
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--petrol);
+}
+
+.maruan-portrait-frame {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--hair);
+  background: var(--white);
+  margin: 0 auto;
+}
+
+.maruan-portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.autoridade-col-credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--hair);
+}
+
+.credential-item-clean {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--hair);
+  background: transparent;
+  box-shadow: none;
+}
+
+.credential-item-clean strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--deep);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.credential-item-clean span {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--petrol);
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   7. REGIÃO DE ATENDIMENTO (SEM CAIXAS / SEM ÍCONES)
+   ========================================================================== */
+.sec-v2-regiao {
+  padding: 80px 0;
+  background: var(--slate-light);
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+}
+
+.regiao-layout-v2 {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.regiao-text-col h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.regiao-text-col p {
+  font-size: 1rem;
+  color: var(--graphite);
+}
+
+.regiao-list-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--hair);
+}
+
+.location-item-clean {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--hair);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--deep);
+}
+
+/* ==========================================================================
+   8. DÚVIDAS FREQUENTES (FAQ FIEL À REFERÊNCIA VISUAL — COMPACTO E SEM LACUNAS)
+   ========================================================================== */
+.sec-v2-faq {
+  padding: 90px 0;
+  background: var(--white);
+}
+
+.sec-v2-faq .wrap {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.faq-layout-v2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-head-col {
+  text-align: center;
+  margin-bottom: 44px;
+  max-width: 580px;
+  width: 100%;
+}
+
+.faq-head-col .eyebrow-v2 {
+  justify-content: center;
+}
+
+.faq-head-col h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  line-height: 1.18;
+  color: var(--deep);
+  margin-bottom: 12px;
+}
+
+.faq-head-col .v2-intro-txt {
+  font-size: 1.02rem;
+  color: var(--graphite);
+  opacity: 0.85;
+}
+
+.faq-list-v2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item-v2 {
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  background: var(--off);
+  transition: background-color 0.22s ease,
+              border-color 0.22s ease,
+              box-shadow 0.22s ease;
+}
+
+.faq-item-v2[open] {
+  background: var(--white);
+  border-color: var(--petrol);
+  border-left: 3px solid var(--petrol);
+  box-shadow: var(--shadow-subtle);
+}
+
+.faq-summary-v2 {
+  padding: 18px 24px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--deep);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+}
+
+.faq-summary-v2::-webkit-details-marker {
+  display: none;
+}
+
+.faq-summary-v2:hover {
+  transform: translateX(3px);
+  color: var(--petrol);
+}
+
+.faq-icon-v2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--petrol);
+  opacity: 0.75;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease, opacity 0.2s ease;
+}
+
+.faq-summary-v2:hover .faq-icon-v2 {
+  opacity: 1;
+  color: var(--petrol);
+}
+
+.faq-item-v2[open] .faq-icon-v2 {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+.faq-answer-v2 {
+  padding: 0 24px 20px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--graphite);
+  border-top: 1px solid rgba(18, 51, 63, 0.06);
+  padding-top: 16px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item-v2[open] .faq-answer-v2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   9. FECHAMENTO COMERCIAL DARK (CONVERSÃO PURA)
+   ========================================================================== */
+.sec-v2-fechamento-dark {
+  padding: 100px 0 60px;
+  background: var(--deep);
+  color: var(--off);
+}
+
+.fechamento-dark-layout-v2 {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.fechamento-title-v2 {
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  color: var(--white);
+  line-height: 1.18;
+}
+
+.serif-italic-light {
+  display: block;
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  color: var(--sage);
+  font-weight: 400;
+}
+
+.fechamento-cta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fechamento-microcopy-v2 {
+  font-size: 0.85rem;
+  color: var(--slate);
+  opacity: 0.85;
+  margin: 0;
+}
+
+.brand-mark-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  text-align: right;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 24px;
+}
+
+.brand-name-sub {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--white);
+}
+
+.brand-city-sub {
+  font-size: 0.78rem;
+  color: var(--sage);
+  opacity: 0.8;
+}
+
+.footer-v2-integrated {
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--sage);
+  opacity: 0.8;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brand-info-v2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   BREAKPOINTS RESPONSIVOS (960px, 680px, 430px, 390px)
+   ========================================================================== */
+@media (max-width: 960px) {
+  .hero-v2-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .reconhecimento-grid-4-v2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .reconhecimento-box-v2 {
+    border-right: none;
+    border-bottom: 1px solid var(--hair);
+    padding-bottom: 20px;
+  }
+
+  .fluxo-layout-editorial-v2 {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .banner-dark-3col {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .timeline-v2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 24px;
+  }
+
+  .autoridade-v2-3col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .maruan-portrait-frame {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .regiao-layout-v2, .faq-layout-v2 {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .fechamento-dark-layout-v2 {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .brand-mark-box {
+    align-items: flex-start;
+    text-align: left;
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-v2-dark {
+    padding: 110px 0 60px;
+  }
+
+  .reconhecimento-grid-4-v2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .timeline-v2 {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-v2-integrated {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-v2-title .title-main {
+    font-size: 1.95rem;
+  }
+
+  .hero-v2-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary-v2 {
+    width: 100%;
+  }
+
+  .btn-secondary-v2 {
+    justify-content: center;
+  }
+}

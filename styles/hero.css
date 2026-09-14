@@ -1,0 +1,157 @@
+/* ============ HERO (EVOLUÇÃO COMERCIAL E DE MARCA) ============ */
+.hero {
+  position: relative;
+  display: flex;
+  min-height: calc(100vh - 80px);
+  margin-top: 80px;
+  background: var(--off);
+  overflow: hidden;
+}
+
+.hero-content-col {
+  position: relative;
+  z-index: 4;
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 4vw 80px 64px;
+}
+
+.hero-eyebrow-commercial {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--petrol);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero h1 .main-q {
+  display: block;
+  font-weight: 700;
+  color: var(--deep);
+}
+
+.hero h1 .sub-serif {
+  display: block;
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--petrol);
+  font-size: 0.88em;
+  margin-top: 6px;
+}
+
+.hero-sub {
+  margin-top: 16px;
+  max-width: 46ch;
+  font-size: 1.05rem;
+  color: var(--graphite);
+  opacity: 0.82;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-fill {
+  background: var(--petrol);
+  color: var(--white);
+  padding: 16px 30px;
+  border-radius: 2px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  display: inline-block;
+  box-shadow: 0 4px 14px rgba(18, 51, 63, 0.15);
+}
+
+.btn-fill:hover {
+  background: var(--deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(13, 41, 51, 0.25);
+}
+
+.btn-ghost {
+  padding: 16px 4px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--petrol);
+  border-bottom: 1.5px solid var(--hair);
+  display: inline-block;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--petrol);
+  color: var(--deep);
+}
+
+.hero-micro-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--hair);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--petrol);
+}
+
+.hero-micro-info span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-signature-accent {
+  position: absolute;
+  bottom: 24px;
+  left: 64px;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--petrol);
+  opacity: 0.55;
+  z-index: 5;
+}
+
+/* Photo Column Hero */
+.hero-photo-col {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+  background: var(--deep);
+}
+
+.hero-photo-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
+  display: block;
+}

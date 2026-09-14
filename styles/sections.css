@@ -1,0 +1,1021 @@
+/* ============ SEÇÃO NECESSIDADE (EMOCIONAL & EDITORIAL) ============ */
+.necessidade {
+  padding: 120px 0;
+  background: var(--white);
+  position: relative;
+}
+
+.necessidade-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.necessidade-left h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  color: var(--deep);
+  margin-bottom: 24px;
+}
+
+.necessidade-left p.necessidade-intro {
+  font-size: 1.05rem;
+  color: var(--graphite);
+  opacity: 0.82;
+  line-height: 1.65;
+  max-width: 46ch;
+}
+
+.necessidade-right {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-left: 36px;
+  border-left: 1.5px solid var(--hair);
+}
+
+.necessidade-editorial-quote {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.necessidade-editorial-quote .quote-lead {
+  font-size: 1.08rem;
+  color: var(--graphite);
+  opacity: 0.78;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.necessidade-editorial-quote .quote-main {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(2.1rem, 3.6vw, 2.9rem);
+  color: var(--petrol);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.necessidade-location-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--graphite);
+  opacity: 0.75;
+  line-height: 1.5;
+  padding-top: 16px;
+  border-top: 1px solid var(--hair);
+}
+
+.necessidade-location-badge .mark-diamond {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* ============ SEÇÃO DE ATENDIMENTOS DE ENFERMAGEM ============ */
+.atendimentos {
+  padding: 120px 0;
+  background: var(--off);
+}
+
+.atendimentos-header {
+  margin-bottom: 64px;
+}
+
+.atendimentos-header h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.atendimentos-header p.intro-txt {
+  font-size: 1.08rem;
+  color: var(--graphite);
+  opacity: 0.8;
+  max-width: 54ch;
+}
+
+.atendimentos-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--hair);
+}
+
+.atendimento-row {
+  display: grid;
+  grid-template-columns: 80px 1.1fr 1.2fr auto;
+  gap: 36px;
+  align-items: center;
+  padding: 40px 24px;
+  border-bottom: 1px solid var(--hair);
+  position: relative;
+  background: transparent;
+  transition: background 0.3s ease, padding-left 0.3s ease;
+}
+
+.atendimento-row:hover {
+  background: var(--white);
+  padding-left: 32px;
+}
+
+.atendimento-num {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  line-height: 1;
+  color: var(--petrol);
+  opacity: 0.45;
+  font-weight: 500;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.atendimento-row:hover .atendimento-num {
+  opacity: 1;
+}
+
+.atendimento-title-wrap h3 {
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  color: var(--deep);
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.atendimento-title-wrap .subhead {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--petrol);
+  font-weight: 500;
+}
+
+.atendimento-desc p {
+  font-size: 0.96rem;
+  color: var(--graphite);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Link Editorial CTA (Leve e Elegante) */
+.link-editorial-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--petrol);
+  white-space: nowrap;
+  position: relative;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.link-editorial-cta:hover {
+  border-color: var(--petrol);
+  transform: translateX(4px);
+}
+
+/* ============ SEÇÃO ACOMPANHAMENTO PARTICULAR ============ */
+.acompanhamento {
+  padding: 120px 0;
+  background: var(--white);
+  position: relative;
+}
+
+.acompanhamento-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.acompanhamento-left h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  color: var(--deep);
+  margin-bottom: 24px;
+}
+
+.acompanhamento-commercial-lead {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  color: var(--petrol);
+  line-height: 1.35;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.acompanhamento-commercial-txt {
+  font-size: 1.02rem;
+  color: var(--graphite);
+  opacity: 0.84;
+  line-height: 1.65;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--hair);
+}
+
+.acompanhamento-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.acompanhamento-body p {
+  font-size: 1.02rem;
+  color: var(--graphite);
+  opacity: 0.82;
+  line-height: 1.65;
+  max-width: 52ch;
+}
+
+.editorial-highlight-card {
+  padding: 48px 44px;
+  background: var(--off);
+  border-left: 3.5px solid var(--petrol);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  box-shadow: var(--shadow-subtle);
+  border-radius: 0 4px 4px 0;
+}
+
+.editorial-highlight-card .highlight-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.editorial-highlight-card .target {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  opacity: 0.65;
+}
+
+.editorial-highlight-card .phrase {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--petrol);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.editorial-highlight-card .highlight-divider {
+  height: 1px;
+  background: var(--hair);
+  width: 100%;
+}
+
+/* ============ SEÇÃO COMO FUNCIONA ============ */
+.como-funciona {
+  padding: 120px 0;
+  background: var(--off);
+  position: relative;
+}
+
+.como-funciona-header {
+  margin-bottom: 64px;
+}
+
+.como-funciona-header h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.como-funciona-header p.intro-txt {
+  font-size: 1.08rem;
+  color: var(--graphite);
+  opacity: 0.82;
+  max-width: 56ch;
+  line-height: 1.6;
+}
+
+.como-funciona-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 28px;
+  border-top: 1.5px solid var(--hair);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.step-item:nth-child(even) {
+  padding-top: 44px;
+}
+
+.step-item:hover {
+  border-top-color: var(--petrol);
+}
+
+.step-num {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(3rem, 4.5vw, 4.2rem);
+  line-height: 0.9;
+  color: var(--petrol);
+  opacity: 0.4;
+  font-weight: 500;
+}
+
+.step-content h3 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--deep);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.step-content p {
+  font-size: 0.94rem;
+  color: var(--graphite);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.como-funciona-closing {
+  background: transparent;
+  padding: 48px 0 0;
+  border-top: 1.5px solid var(--hair);
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.closing-quote-editorial span {
+  display: block;
+  font-size: 0.94rem;
+  color: var(--graphite);
+  opacity: 0.78;
+  margin-bottom: 6px;
+}
+
+.closing-quote-editorial blockquote {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  color: var(--petrol);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/* ============ SOBRE MARUAN (AUTORAL) ============ */
+.sobre {
+  padding: 130px 0 110px;
+  background: var(--white);
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.sobre-photo-wrap {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: var(--slate);
+  transform: translateY(24px);
+}
+
+.sobre-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+}
+
+.sobre-copy {
+  padding-left: 10px;
+}
+
+.sobre-copy h2 {
+  font-size: clamp(2.2rem, 3.8vw, 3.1rem);
+  line-height: 1.15;
+  color: var(--deep);
+  margin-bottom: 28px;
+}
+
+.sobre-copy p.lead {
+  font-size: 1.08rem;
+  color: var(--graphite);
+  opacity: 0.92;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.sobre-copy p.body-txt {
+  font-size: 1rem;
+  color: var(--graphite);
+  opacity: 0.8;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.sobre-quote-editorial {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1.5px solid var(--hair);
+  position: relative;
+}
+
+.sobre-quote-editorial blockquote {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.4rem, 2.3vw, 1.85rem);
+  color: var(--petrol);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+/* ============ FILOSOFIA DE ATUAÇÃO (A FORMA DE CUIDAR) ============ */
+.cuidado {
+  padding: 130px 0 140px;
+  background: linear-gradient(170deg, var(--petrol) 0%, var(--deep) 100%);
+  color: var(--off);
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.cuidado::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(245, 246, 242, 0.04);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.cuidado-opening {
+  max-width: 780px;
+  margin-bottom: 80px;
+}
+
+.cuidado-opening .eyebrow {
+  color: var(--sage);
+  margin-bottom: 20px;
+}
+
+.cuidado-opening h2 {
+  color: var(--off);
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  line-height: 1.12;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+.cuidado-opening h2 .serif {
+  color: var(--sage);
+  font-weight: 500;
+}
+
+.cuidado-opening .sub {
+  font-size: clamp(1.08rem, 1.8vw, 1.25rem);
+  color: rgba(245, 246, 242, 0.78);
+  max-width: 56ch;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.cuidado-manifesto-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  position: relative;
+}
+
+.cuidado-principle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 40px;
+  align-items: baseline;
+  padding-top: 36px;
+  border-top: 1px solid rgba(245, 246, 242, 0.12);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cuidado-principle:hover {
+  border-top-color: rgba(169, 184, 174, 0.4);
+}
+
+.cuidado-principle.pos-1 {
+  width: 82%;
+}
+
+.cuidado-principle.pos-2 {
+  width: 82%;
+  margin-left: auto;
+}
+
+.cuidado-principle.pos-3 {
+  width: 88%;
+}
+
+.cuidado-num-mark {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: clamp(3.5rem, 6vw, 5rem);
+  line-height: 0.85;
+  color: var(--sage);
+  opacity: 0.35;
+  font-weight: 500;
+  user-select: none;
+}
+
+.cuidado-principle-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cuidado-principle-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--off);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cuidado-principle-sub {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  color: var(--sage);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.cuidado-principle-txt {
+  font-size: 1rem;
+  color: rgba(245, 246, 242, 0.78);
+  line-height: 1.65;
+  max-width: 52ch;
+  margin-top: 6px;
+}
+
+/* ============ AUTORIDADE: FORMAÇÃO & ATUALIZAÇÃO ============ */
+.autoridade {
+  padding: 120px 0;
+  background: var(--off);
+  position: relative;
+}
+
+.autoridade-header {
+  margin-bottom: 72px;
+}
+
+.autoridade-header h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.autoridade-header p.intro-txt {
+  font-size: 1.08rem;
+  color: var(--graphite);
+  opacity: 0.82;
+  max-width: 58ch;
+  line-height: 1.6;
+}
+
+.autoridade-timeline {
+  display: flex;
+  flex-direction: column;
+  border-top: 1.5px solid var(--hair);
+  margin-bottom: 72px;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--hair);
+  align-items: start;
+  transition: background 0.3s ease;
+}
+
+.timeline-year {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timeline-year .yr {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  line-height: 0.95;
+  color: var(--petrol);
+  font-weight: 500;
+}
+
+.timeline-year .status-tag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  opacity: 0.6;
+  margin-top: 6px;
+}
+
+.timeline-body h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 700;
+  color: var(--deep);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.timeline-body .org-label {
+  font-size: 0.9rem;
+  color: var(--petrol);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.timeline-body p {
+  font-size: 0.96rem;
+  color: var(--graphite);
+  opacity: 0.82;
+  line-height: 1.6;
+  max-width: 54ch;
+}
+
+/* Núcleo de Atualização Científica (Sem Card Elevado) */
+.cert-nucleus {
+  background: transparent;
+  padding: 48px 0 0;
+  border-radius: 0;
+  border-top: 1.5px solid var(--hair);
+  box-shadow: none;
+}
+
+.cert-nucleus-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--hair);
+}
+
+.cert-nucleus-head h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--petrol);
+}
+
+.cert-nucleus-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+.cert-item-sm {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cert-item-sm h4 {
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--deep);
+}
+
+.cert-item-sm .hrs {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--petrol);
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+/* ============ DÚVIDAS FREQUENTES (FAQ COMPACTO) ============ */
+.faq-section {
+  padding: 90px 0;
+  background: var(--white);
+  position: relative;
+}
+
+.faq-header {
+  margin-bottom: 48px;
+}
+
+.faq-header h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.faq-header p.intro-txt {
+  font-size: 1.08rem;
+  color: var(--graphite);
+  opacity: 0.82;
+  max-width: 54ch;
+  line-height: 1.6;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1.5px solid var(--hair);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--hair);
+  transition: background 0.3s ease;
+}
+
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: left;
+  padding: 22px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: clamp(1.05rem, 1.7vw, 1.2rem);
+  font-weight: 700;
+  color: var(--deep);
+  transition: color 0.25s ease;
+}
+
+.faq-question:hover {
+  color: var(--petrol);
+}
+
+.faq-icon {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.8rem;
+  color: var(--petrol);
+  transition: transform 0.3s ease;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, padding 0.3s ease;
+  padding: 0 8px;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+  padding-bottom: 22px;
+}
+
+.faq-answer p {
+  font-size: 1rem;
+  color: var(--graphite);
+  opacity: 0.84;
+  line-height: 1.6;
+  max-width: 64ch;
+}
+
+/* ============ CONTATO & ENCERRAMENTO COMERCIAL ============ */
+.cta-final {
+  background: linear-gradient(165deg, var(--petrol) 0%, var(--deep) 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 60px;
+  color: var(--off);
+}
+
+.cta-watermark {
+  position: absolute;
+  bottom: 90px;
+  left: -20px;
+  right: 0;
+  font-size: clamp(5rem, 11vw, 13rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(245, 246, 242, 0.03);
+  pointer-events: none;
+  white-space: nowrap;
+  user-select: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  z-index: 1;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-text {
+  padding-right: 40px;
+}
+
+.cta-text .eyebrow {
+  color: var(--sage);
+  margin-bottom: 22px;
+}
+
+.cta-text h2 {
+  color: var(--off);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  line-height: 1.12;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.cta-text h2 .serif-italic {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  color: var(--sage);
+  font-weight: 500;
+  display: block;
+  margin-top: 4px;
+}
+
+.cta-text p.sub {
+  max-width: 48ch;
+  color: rgba(245, 246, 242, 0.82);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.cta-location-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--sage);
+  margin-bottom: 36px;
+}
+
+.cta-action-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.btn-whatsapp-brand {
+  background: var(--off);
+  color: var(--deep);
+  padding: 17px 36px;
+  border-radius: 2px;
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.btn-whatsapp-brand:hover {
+  background: var(--slate);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.32);
+}
+
+.cta-microcopy {
+  font-size: 0.85rem;
+  color: rgba(245, 246, 242, 0.65);
+  font-style: italic;
+}
+
+.contact-channels-brand {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.88rem;
+  color: rgba(245, 246, 242, 0.6);
+  padding-top: 24px;
+  border-top: 1px solid rgba(245, 246, 242, 0.12);
+}
+
+.contact-channels-brand a {
+  color: rgba(245, 246, 242, 0.75);
+  border-bottom: 1px solid rgba(245, 246, 242, 0.25);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-channels-brand a:hover {
+  color: var(--off);
+  border-color: var(--off);
+}
+
+.cta-photo-blend {
+  position: relative;
+  height: 540px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.cta-photo-blend img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  mask-image: linear-gradient(to right, transparent 0%, black 25%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%);
+}
+
+.footer-integrated {
+  margin-top: 100px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(245, 246, 242, 0.14);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  font-size: 0.86rem;
+  color: rgba(245, 246, 242, 0.55);
+}
+
+.footer-integrated .brand-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-integrated .brand-name {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--off);
+}
+
+.footer-integrated .tagline {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  color: var(--sage);
+  font-size: 0.95rem;
+}

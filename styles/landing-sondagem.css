@@ -1,0 +1,1195 @@
+/* ==========================================================================
+   LANDING PAGE: PASSAGEM DE SONDA EM GOIÂNIA (DIREÇÃO DE ARTE PREMIUM V2)
+   Conceito: Editorial Contemporâneo + Saúde Premium + Precisão Clínica.
+   Alta presença visual, contraste de escala, layout 1280px e tensão intencional.
+   ========================================================================== */
+
+.landing-sondagem {
+  background-color: var(--off);
+  color: var(--graphite);
+  overflow-x: hidden;
+}
+
+/* Override Global Width for Sondagem Landing to 1280px */
+.landing-sondagem .wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* --------------------------------------------------------------------------
+   Header Navigation Customizations for Sondagem (Largura Ampla)
+   -------------------------------------------------------------------------- */
+.nav-sondagem .nav-inner {
+  max-width: 1280px;
+  padding: 0 48px;
+}
+
+.nav-sondagem .sub-service-tag {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--sage);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.mark-diamond-sondagem {
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid var(--sage);
+  background: transparent;
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+/* Base Eyebrows */
+.eyebrow-sondagem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--petrol);
+  margin-bottom: 18px;
+}
+
+.eyebrow-sondagem .folio {
+  opacity: 0.55;
+}
+
+.eyebrow-sondagem-dark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 18px;
+}
+
+/* Botões com Mais Presença Visuais */
+.btn-primary-sondagem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 36px;
+  background: var(--petrol);
+  color: var(--white);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: 0 6px 20px rgba(18, 51, 63, 0.18);
+}
+
+.btn-primary-sondagem:hover {
+  background: var(--deep);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(18, 51, 63, 0.28);
+}
+
+.btn-outline-sondagem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 32px;
+  background: transparent;
+  color: var(--petrol);
+  border: 1px solid var(--hair);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-outline-sondagem:hover {
+  background: rgba(18, 51, 63, 0.04);
+  border-color: var(--petrol);
+}
+
+.btn-dark-sondagem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 36px;
+  background: var(--slate-light);
+  color: var(--deep);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.22s ease, transform 0.22s ease;
+}
+
+.btn-dark-sondagem:hover {
+  background: var(--white);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   1. HERO SONDAGEM (ALTA PRESENÇA VISUAL & ESCALA MONUMENTAL)
+   ========================================================================== */
+.sec-hero-sondagem {
+  padding: 140px 0 110px;
+  background: var(--off);
+  border-bottom: 1px solid var(--hair);
+  position: relative;
+}
+
+.hero-sondagem-grid {
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.hero-sondagem-title {
+  font-size: clamp(3rem, 5.2vw, 4.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--deep);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-sondagem-lead {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.35rem, 2.2vw, 1.65rem);
+  line-height: 1.35;
+  color: var(--petrol);
+  margin-bottom: 24px;
+}
+
+.hero-sondagem-txt {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--graphite);
+  opacity: 0.88;
+  margin-bottom: 36px;
+  max-width: 580px;
+}
+
+.hero-sondagem-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.hero-sondagem-micro {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--graphite);
+  opacity: 0.65;
+  letter-spacing: 0.04em;
+}
+
+/* Lado Direito: Composição Arquitetônica em Escala com Índices */
+.hero-stack-architectural {
+  border-left: 1.5px solid var(--hair);
+  padding-left: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 10px;
+}
+
+.stack-item-sondagem {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.stack-num-idx {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--sage);
+}
+
+.stack-txt-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stack-title-main {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--deep);
+  line-height: 1;
+}
+
+.title-hero-large {
+  font-size: clamp(2.2rem, 3vw, 2.7rem);
+  color: var(--petrol);
+}
+
+.title-hero-emphasis {
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.stack-subtitle-sub {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--petrol);
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+
+.stack-line-hair {
+  height: 1px;
+  background: var(--hair);
+  width: 100%;
+}
+
+.stack-footer-note {
+  margin-top: 16px;
+  padding-top: 20px;
+  border-top: 1.5px solid var(--hair);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--graphite);
+  opacity: 0.8;
+}
+
+.stack-footer-note span {
+  display: block;
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+/* ==========================================================================
+   2. SEÇÃO — SUA NECESSIDADE (GRID EDITORIAL DUPLO AMPO)
+   ========================================================================== */
+.sec-sondagem-necessidade {
+  padding: 120px 0;
+  background: var(--white);
+}
+
+.sondagem-head-block {
+  max-width: 780px;
+  margin-bottom: 64px;
+}
+
+.sondagem-head-block h2 {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  line-height: 1.12;
+  color: var(--deep);
+  margin-bottom: 18px;
+}
+
+.sondagem-intro-p {
+  font-size: 1.1rem;
+  line-height: 1.62;
+  color: var(--graphite);
+  opacity: 0.85;
+}
+
+/* Grid Editorial Duplo 2x2 Largo */
+.necessidade-editorial-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 70px;
+  border-top: 1px solid var(--hair);
+  padding-top: 48px;
+  margin-bottom: 60px;
+}
+
+.necessidade-item-editorial {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--hair);
+  transition: transform 0.2s ease;
+}
+
+.necessidade-item-editorial:hover {
+  transform: translateX(4px);
+}
+
+.necessidade-num {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--sage);
+}
+
+.necessidade-quote {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  line-height: 1.35;
+  color: var(--deep);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.necessidade-footer-call {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid var(--hair);
+}
+
+.necessidade-footer-call p {
+  font-size: 1.1rem;
+  color: var(--graphite);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   3. SEÇÃO — TIPOS DE SONDAGEM (LAYOUT EDITORIAL ASIMÉTRICO DARK)
+   ========================================================================== */
+.sec-sondagem-tipos {
+  padding: 130px 0;
+  background: var(--deep);
+  color: var(--off);
+}
+
+.tipos-head-block {
+  max-width: 720px;
+  margin-bottom: 64px;
+}
+
+.tipos-head-block h2 {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  line-height: 1.12;
+  color: var(--white);
+}
+
+/* Layout Editorial Assimétrico */
+.tipos-editorial-asymmetric {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.tipo-card-editorial {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(220, 231, 234, 0.12);
+}
+
+.tipo-idx-num {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--sage);
+  padding-top: 4px;
+}
+
+.tipo-content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tipo-card-editorial h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--white);
+}
+
+.tipo-tag-sub {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--sage);
+  text-transform: uppercase;
+}
+
+.tipo-card-editorial p {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--slate);
+  opacity: 0.9;
+  max-width: 720px;
+}
+
+/* Destaque Hero Módulo 1 (Vesical) */
+.tipo-hero-featured {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(220, 231, 234, 0.14);
+  padding: 44px 48px;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba(220, 231, 234, 0.14);
+}
+
+.tipo-hero-featured h3 {
+  font-size: clamp(1.8rem, 2.8vw, 2.3rem);
+  color: var(--white);
+}
+
+/* Linha Médio Paralelo (Nasogástrica / Orogástrica) */
+.tipos-mid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  border-bottom: 1px solid rgba(220, 231, 234, 0.12);
+  padding-bottom: 40px;
+}
+
+.tipos-mid-row .tipo-card-editorial {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Faixa Horizontal de Base (Nasoentérica) */
+.tipo-bottom-wide {
+  border-bottom: none;
+  padding-top: 10px;
+}
+
+.tipos-cta-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 16px;
+}
+
+/* ==========================================================================
+   4. SEÇÃO — GRANDE QUEBRA EDITORIAL ("TUDO BEM." MONUMENTAL)
+   ========================================================================== */
+.sec-sondagem-quebra {
+  padding: 140px 0;
+  background: #EEF3F0;
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+}
+
+.quebra-grid-2col {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.quebra-tag {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--petrol);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.quebra-headline-giant {
+  font-size: clamp(4.5rem, 9vw, 7.8rem);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--deep);
+  margin: 0;
+}
+
+.quebra-body-txt {
+  font-size: clamp(1.1rem, 1.8vw, 1.25rem);
+  line-height: 1.7;
+  color: var(--graphite);
+  opacity: 0.92;
+  margin-bottom: 36px;
+}
+
+/* ==========================================================================
+   5. SEÇÃO — ANTES DO PROCEDIMENTO (LINHA VERTICAL DE PRECISÃO AMPEAD)
+   ========================================================================== */
+.sec-sondagem-processo {
+  padding: 130px 0;
+  background: var(--white);
+}
+
+.processo-head-block {
+  max-width: 680px;
+  margin-bottom: 72px;
+}
+
+.processo-head-block h2 {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  line-height: 1.12;
+  color: var(--deep);
+}
+
+.processo-grid-2col {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.processo-timeline-vertical {
+  position: relative;
+  max-width: 780px;
+  padding-left: 56px;
+}
+
+/* Guia Vertical Fina */
+.processo-timeline-vertical::before {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 12px;
+  bottom: 24px;
+  width: 2px;
+  background: var(--petrol);
+  opacity: 0.3;
+}
+
+.processo-step-vertical {
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.processo-step-vertical:last-child {
+  margin-bottom: 0;
+}
+
+.step-node-diamond {
+  position: absolute;
+  left: -56px;
+  top: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+}
+
+.step-node-diamond::after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--petrol);
+  background: var(--white);
+  transform: rotate(45deg);
+}
+
+.step-tag-code {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--sage);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.processo-step-vertical h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--deep);
+  margin-bottom: 10px;
+}
+
+.processo-step-vertical p {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--graphite);
+  opacity: 0.88;
+  max-width: 640px;
+}
+
+.processo-photo-frame {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--hair);
+  aspect-ratio: 4 / 4.8;
+}
+
+.processo-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-caption-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(13, 41, 51, 0) 0%, rgba(13, 41, 51, 0.92) 100%);
+  padding: 32px 24px 20px;
+  color: var(--white);
+}
+
+.photo-caption-tag span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--sage);
+  margin-bottom: 4px;
+}
+
+.photo-caption-tag p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--slate);
+  margin: 0;
+}
+
+/* ==========================================================================
+   GALERIA TRÍPTICO EDITORIAL (FOTOGRAFIAS ESTRATÉGICAS DE SONDAGEM)
+   ========================================================================== */
+.sec-sondagem-triptico {
+  padding: 110px 0;
+  background: var(--off);
+  border-bottom: 1px solid var(--hair);
+}
+
+.triptico-grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.triptico-card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--hair);
+  background: var(--white);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.triptico-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(13, 41, 51, 0.14);
+}
+
+.triptico-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4.6;
+  overflow: hidden;
+}
+
+.triptico-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.triptico-card:hover .triptico-img-wrap img {
+  transform: scale(1.04);
+}
+
+.triptico-overlay-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(13, 41, 51, 0.85) 0%, rgba(13, 41, 51, 0) 100%);
+  padding: 24px 24px 48px;
+  color: var(--white);
+}
+
+.triptico-tag {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--sage);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.triptico-overlay-top p {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--slate);
+  opacity: 0.95;
+  margin: 0;
+}
+
+.triptico-overlay-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(13, 41, 51, 0.88) 0%, rgba(13, 41, 51, 0) 100%);
+  padding: 48px 24px 24px;
+}
+
+.triptico-quote-serif {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--white);
+  display: block;
+  text-align: center;
+}
+
+/* ==========================================================================
+   6. SEÇÃO — PODE SER FEITO EM CASA? (GRID 2-COL + FITA EDITORIAL LARGA)
+   ========================================================================== */
+.sec-sondagem-ambiente {
+  padding: 120px 0;
+  background: var(--slate-light);
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+}
+
+.ambiente-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+.ambiente-col-left h2 {
+  font-size: clamp(2.4rem, 4.2vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--deep);
+}
+
+.ambiente-response-highlight {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  color: var(--petrol);
+  margin-bottom: 24px;
+}
+
+.ambiente-txt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--graphite);
+  opacity: 0.9;
+}
+
+.ambiente-strip-editorial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+  padding: 36px 0;
+  margin-bottom: 16px;
+}
+
+.strip-item-name {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--deep);
+}
+
+.strip-divider-mark {
+  color: var(--sage);
+  font-size: 1.2rem;
+}
+
+.ambiente-micro-reassurance {
+  font-size: 0.88rem;
+  color: var(--graphite);
+  opacity: 0.7;
+  letter-spacing: 0.04em;
+}
+
+/* ==========================================================================
+   7. SOBRE MARUAN (AUTORIDADE COM FOTO PROTAGONISTA 45% E CREDENCIAIS NÚMERICAS)
+   ========================================================================== */
+.sec-sondagem-maruan {
+  padding: 130px 0;
+  background: var(--off);
+  border-bottom: 1px solid var(--hair);
+}
+
+.maruan-sondagem-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.maruan-photo-frame-sondagem {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 4 / 5.2;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--hair);
+  background: var(--white);
+  margin: 0 auto;
+}
+
+.maruan-photo-frame-sondagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.maruan-bio-col-sondagem h2 {
+  font-size: clamp(2.2rem, 3.4vw, 2.8rem);
+  line-height: 1.15;
+  color: var(--deep);
+  margin-bottom: 18px;
+}
+
+.maruan-name-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--petrol);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.maruan-bio-p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--graphite);
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.credentials-list-clean {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--hair);
+  margin-bottom: 40px;
+}
+
+.credential-row-clean {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--hair);
+}
+
+.cred-idx-num {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--sage);
+}
+
+.cred-txt-wrap strong {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--deep);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.cred-txt-wrap span {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--petrol);
+  opacity: 0.85;
+}
+
+.maruan-signature-sondagem {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.45rem;
+  line-height: 1.4;
+  color: var(--petrol);
+  margin: 0;
+}
+
+/* ==========================================================================
+   8. REGIÃO DE ATENDIMENTO
+   ========================================================================== */
+.sec-sondagem-regiao {
+  padding: 100px 0;
+  background: var(--white);
+  text-align: center;
+  border-bottom: 1px solid var(--hair);
+}
+
+.regiao-wrap-sondagem {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.regiao-wrap-sondagem h2 {
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  color: var(--deep);
+  margin-bottom: 28px;
+}
+
+.regiao-line-editorial {
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--petrol);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   9. DÚVIDAS SOBRE SONDAGEM (FAQ COMPACTO E CENTRALIZADO 820px)
+   ========================================================================== */
+.sec-sondagem-faq {
+  padding: 120px 0;
+  background: var(--off);
+}
+
+.sec-sondagem-faq .wrap {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-head-sondagem {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.faq-head-sondagem .eyebrow-sondagem {
+  justify-content: center;
+}
+
+.faq-head-sondagem h2 {
+  font-size: clamp(2.2rem, 3.2vw, 2.7rem);
+  line-height: 1.15;
+  color: var(--deep);
+}
+
+.sondagem-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.sondagem-faq-item {
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  background: var(--white);
+  transition: border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.sondagem-faq-item[open] {
+  border-color: var(--petrol);
+  border-left: 3px solid var(--petrol);
+  box-shadow: var(--shadow-subtle);
+}
+
+.sondagem-faq-summary {
+  padding: 22px 28px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--deep);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  transition: color 0.2s ease;
+}
+
+.sondagem-faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.sondagem-faq-summary:hover {
+  color: var(--petrol);
+}
+
+.faq-q-title {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.faq-q-num {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--sage);
+}
+
+.sondagem-faq-icon {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--petrol);
+  opacity: 0.75;
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+.sondagem-faq-item[open] .sondagem-faq-icon {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+.sondagem-faq-answer {
+  padding: 0 28px 24px 58px;
+  font-size: 0.98rem;
+  line-height: 1.68;
+  color: var(--graphite);
+  border-top: 1px solid rgba(18, 51, 63, 0.06);
+  padding-top: 18px;
+}
+
+/* ==========================================================================
+   10. CTA FINAL DARK (FECHAMENTO COMERCIAL EM ESCALA)
+   ========================================================================== */
+.sec-sondagem-final {
+  padding: 130px 0 70px;
+  background: var(--deep);
+  color: var(--off);
+}
+
+.final-sondagem-content {
+  max-width: 780px;
+  margin: 0 auto 90px;
+  text-align: center;
+}
+
+.final-sondagem-content h2 {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  color: var(--white);
+  line-height: 1.12;
+  margin-bottom: 20px;
+}
+
+.final-sub-p {
+  font-size: 1.2rem;
+  color: var(--slate);
+  opacity: 0.88;
+  margin-bottom: 44px;
+}
+
+.final-micro-location {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--sage);
+  opacity: 0.78;
+  margin-top: 20px;
+  letter-spacing: 0.08em;
+}
+
+/* ==========================================================================
+   BREAKPOINTS RESPONSIVOS (960px, 680px, 430px, 390px)
+   ========================================================================== */
+@media (max-width: 960px) {
+  .landing-sondagem .wrap {
+    padding: 0 24px;
+  }
+
+  .hero-sondagem-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-stack-architectural {
+    border-left: none;
+    border-top: 1.5px solid var(--hair);
+    padding-left: 0;
+    padding-top: 36px;
+  }
+
+  .necessidade-editorial-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .tipos-mid-row {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .quebra-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .ambiente-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .processo-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .triptico-grid-3col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .maruan-sondagem-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .maruan-photo-frame-sondagem {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 680px) {
+  .sec-hero-sondagem {
+    padding: 120px 0 70px;
+  }
+
+  .ambiente-strip-editorial {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .strip-divider-mark {
+    display: none;
+  }
+
+  .sondagem-faq-answer {
+    padding-left: 28px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-sondagem-title {
+    font-size: 2.2rem;
+  }
+
+  .quebra-headline-giant {
+    font-size: 3.8rem;
+  }
+}
