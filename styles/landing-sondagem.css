@@ -1162,9 +1162,15 @@
 @media (max-width: 680px) {
   .maruan-photo-frame-sondagem {
     max-width: 100%;
-    aspect-ratio: 3 / 4;
-    max-height: 420px;
+    aspect-ratio: 3 / 4.4;
+    max-height: 520px;
     margin: 0 auto;
+    background: #FFFFFF;
+  }
+
+  .maruan-photo-frame-sondagem img {
+    object-fit: contain;
+    object-position: center top;
   }
 
   .sec-hero-sondagem {

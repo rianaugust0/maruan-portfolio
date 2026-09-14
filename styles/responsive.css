@@ -182,16 +182,20 @@
     bottom: auto;
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3.4;
-    max-height: 340px;
-    margin-top: 8px;
+    aspect-ratio: 3 / 4;
+    max-height: 480px;
+    margin-top: 16px;
     clip-path: none;
     border-radius: 4px;
     overflow: hidden;
+    background: var(--deep);
   }
 
   .hero-photo-col img {
-    object-position: center 10%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
   }
 
   .photo-badge {
@@ -311,13 +315,19 @@
 
   .sobre-photo-wrap {
     height: auto;
-    aspect-ratio: 3 / 4;
-    max-height: 420px;
+    aspect-ratio: 3 / 4.4;
+    max-height: 520px;
     width: 100%;
     transform: none;
+    background: #FFFFFF;
+    border-radius: 4px;
+    overflow: hidden;
   }
 
   .sobre-photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     object-position: center top;
   }
 
@@ -416,14 +426,6 @@
     mask-image: none;
     -webkit-mask-image: none;
     object-position: center top;
-  }
-
-  .sobre-photo-wrap {
-    height: auto;
-    aspect-ratio: 3 / 4;
-    max-height: 420px;
-    width: 100%;
-    transform: none;
   }
 
   .como-funciona-closing {
