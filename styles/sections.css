@@ -538,6 +538,121 @@
   font-size: 0.95rem;
 }
 
+/* ==========================================================================
+   GLOBAL PREMIUM FOOTER (UNIFICADO E EDITORIAL)
+   ========================================================================== */
+.footer-global-premium {
+  background: var(--deep);
+  color: rgba(245, 246, 242, 0.65);
+  padding: 60px 0 40px;
+  border-top: 1px solid rgba(220, 231, 234, 0.12);
+  font-size: 0.88rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-global-premium .footer-brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(220, 231, 234, 0.1);
+}
+
+.footer-global-premium .footer-brand-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-global-premium .footer-brand-symbol {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.footer-global-premium .footer-brand-name {
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 0.88rem;
+}
+
+.footer-global-premium .footer-brand-role {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--sage);
+  text-transform: uppercase;
+  padding-left: 8px;
+  border-left: 1px solid rgba(220, 231, 234, 0.2);
+}
+
+.footer-global-premium .footer-services-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-global-premium .footer-services-nav a {
+  color: var(--slate);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.footer-global-premium .footer-services-nav a:hover {
+  color: var(--accent-sage-on-dark);
+}
+
+.footer-global-premium .footer-services-nav .nav-sep {
+  opacity: 0.35;
+  color: var(--sage);
+}
+
+.footer-global-premium .footer-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 28px;
+  font-size: 0.82rem;
+}
+
+.footer-global-premium .footer-tagline {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 1.02rem;
+  color: var(--sage);
+}
+
+.footer-global-premium .footer-location {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(220, 231, 234, 0.5);
+  font-size: 0.75rem;
+}
+
+.footer-global-premium .footer-copy {
+  opacity: 0.55;
+}
+
+@media (max-width: 768px) {
+  .footer-global-premium .footer-brand-row,
+  .footer-global-premium .footer-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
 /* ============ BARRA FIXA WHATSAPP MOBILE ============ */
 .mobile-whatsapp-bar {
   display: none;

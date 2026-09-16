@@ -43,6 +43,12 @@ header.nav.scrolled {
   flex-shrink: 0;
 }
 
+.header-brand-symbol {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 .nav-brand .txt {
   display: flex;
   flex-direction: column;
