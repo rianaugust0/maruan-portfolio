@@ -1,0 +1,156 @@
+import fs from 'fs';
+import path from 'path';
+import { chromium } from 'playwright';
+
+const svgOptionA = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="108" fill="#0D2933"/>
+  <!-- Diamond Shape -->
+  <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
+  <!-- Negative Space M Cutout in Petroleum -->
+  <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#0D2933"/>
+</svg>`;
+
+const svgOptionAInverted = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="108" fill="#F5F6F2"/>
+  <!-- Diamond Shape -->
+  <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#0D2933"/>
+  <!-- Negative Space M Cutout in Off-White -->
+  <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#F5F6F2"/>
+</svg>`;
+
+// Write primary SVG files
+if (!fs.existsSync('./public')) fs.mkdirSync('./public', { recursive: true });
+fs.writeFileSync('./public/favicon.svg', svgOptionA);
+
+const htmlPreview = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simulação de Favicon — Maruan Ramos Vaz</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #111827;
+      color: #F9FAFB;
+    }
+    .preview-card {
+      background: #1F2937;
+      border: 1px solid #374151;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      max-width: 800px;
+    }
+    h2 { margin-top: 0; color: #9FC3B3; font-size: 1.4rem; }
+    p { color: #9CA3AF; font-size: 0.95rem; line-height: 1.5; }
+    .row { display: flex; align-items: center; gap: 32px; margin-top: 24px; flex-wrap: wrap; }
+    .item { text-align: center; }
+    .label { font-size: 0.8rem; color: #9CA3AF; margin-top: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .browser-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      border-radius: 8px 8px 0 0;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .tab-dark { background: #1E293B; color: #E2E8F0; border: 1px solid #334155; }
+    .tab-light { background: #F8FAFC; color: #0F172A; border: 1px solid #E2E8F0; }
+  </style>
+</head>
+<body>
+  <div class="preview-card">
+    <h2>1. Símbolo Proprietário (Visão em Alta Resolução — 512px)</h2>
+    <p>Losango geométrico autoral em tom Sálvia Mineral (<code>#9FC3B3</code>) sobre fundo Petróleo Profundo (<code>#0D2933</code>), esculpindo sutilmente a letra <strong>"M"</strong> através do espaço negativo interno.</p>
+    <div class="row">
+      <div class="item">
+        <div style="width: 160px; height: 160px;">${svgOptionA}</div>
+        <div class="label">Versão Principal (Dark)</div>
+      </div>
+      <div class="item">
+        <div style="width: 160px; height: 160px;">${svgOptionAInverted}</div>
+        <div class="label">Versão Invertida (Light)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-card">
+    <h2>2. Simulação em Abas Reais do Navegador (16x16px e 32x32px)</h2>
+    <p>Testes de contraste e clareza visual sobre fundos de abas escuros e claros:</p>
+    <div class="row">
+      <div class="item">
+        <div class="browser-tab tab-dark">
+          <div style="width: 16px; height: 16px;">${svgOptionA}</div>
+          <span>Maruan Ramos Vaz — Enfermeiro Particular</span>
+        </div>
+        <div class="label">Aba Escura (16x16px)</div>
+      </div>
+      <div class="item">
+        <div class="browser-tab tab-light">
+          <div style="width: 16px; height: 16px;">${svgOptionA}</div>
+          <span>Maruan Ramos Vaz — Enfermeiro Particular</span>
+        </div>
+        <div class="label">Aba Clara (16x16px)</div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 24px;">
+      <div class="item">
+        <div class="browser-tab tab-dark" style="padding: 10px 20px;">
+          <div style="width: 32px; height: 32px;">${svgOptionA}</div>
+          <span style="font-size: 0.95rem;">Maruan Ramos Vaz</span>
+        </div>
+        <div class="label">Retina / Desktop (32x32px)</div>
+      </div>
+      <div class="item">
+        <div class="browser-tab tab-light" style="padding: 10px 20px;">
+          <div style="width: 32px; height: 32px;">${svgOptionA}</div>
+          <span style="font-size: 0.95rem;">Maruan Ramos Vaz</span>
+        </div>
+        <div class="label">Retina / Desktop Light (32x32px)</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>`;
+
+fs.writeFileSync('./scratch/preview_favicons.html', htmlPreview);
+
+async function renderIcons() {
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+
+  // 1. Render PNG sizes
+  const sizes = [
+    { name: 'favicon-16x16.png', size: 16 },
+    { name: 'favicon-32x32.png', size: 32 },
+    { name: 'apple-touch-icon.png', size: 180 },
+    { name: 'android-chrome-512x512.png', size: 512 }
+  ];
+
+  for (const s of sizes) {
+    await page.setViewportSize({ width: s.size, height: s.size });
+    await page.setContent(`<!DOCTYPE html><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden;}</style>${svgOptionA}`);
+    await page.screenshot({ path: `./public/${s.name}`, omitBackground: true });
+    console.log(`Saved public/${s.name}`);
+  }
+
+  // Generate ICO (32x32 copy as favicon.ico or standard binary format)
+  // Standard browsers load favicon.ico at 32x32 or 16x16 PNG content
+  fs.copyFileSync('./public/favicon-32x32.png', './public/favicon.ico');
+
+  // Render HTML preview screenshot
+  await page.setViewportSize({ width: 880, height: 800 });
+  const htmlPath = path.resolve('./scratch/preview_favicons.html');
+  await page.goto(`file:///${htmlPath.replace(/\\/g, '/')}`);
+  const previewOut = path.resolve('./scratch/favicon-preview.png');
+  await page.screenshot({ path: previewOut });
+  console.log(`Saved preview screenshot to ${previewOut}`);
+
+  await browser.close();
+}
+
+renderIcons().catch(err => { console.error(err); process.exit(1); });

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#0D2933"/>
+  <!-- Diamond Shell -->
+  <path d="M 256 70 L 442 256 L 256 442 L 70 256 Z" fill="none" stroke="#9FC3B3" stroke-width="28" stroke-linejoin="miter"/>
+  <!-- Inner M Architectural Pillars -->
+  <path d="M 170 330 L 170 220 L 256 306 L 342 220 L 342 330" fill="none" stroke="#9FC3B3" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
