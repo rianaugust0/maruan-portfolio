@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: Adicionar a diretiva Sitemap com a URL absoluta após definição do domínio oficial
+# Sitemap: https://[DOMINIO_OFICIAL]/sitemap.xml
