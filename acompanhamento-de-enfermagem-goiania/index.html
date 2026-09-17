@@ -149,7 +149,7 @@
     <!-- ============ MOMENTO 02 — SHOWCASE CINEMATOGRÁFICO DE GRANDE ESCALA ============ -->
     <section class="sec-storytelling-interactive" id="situacoes">
       <div class="wrap">
-        
+
         <!-- Cabeçalho e Seletores Horizontais Editoriais -->
         <div class="situacoes-top-bar">
           <div class="situacoes-head">
@@ -178,63 +178,66 @@
           </div>
         </div>
 
-        <!-- Palco Fotográfico GIGANTE de Grande Escala em Largura Total -->
-        <div class="situacoes-cinematic-stage">
-          
-          <!-- Camadas Fotográficas de Grande Escala -->
-          <div class="situacao-photo-layers">
-            <div class="situacao-photo-layer active" id="situacaoPhoto0">
-              <img src="../assets/images/acompanhamento-hospital.jpg" alt="Acompanhamento particular de enfermagem no hospital" loading="lazy">
+        <!-- Trilho de Rolagem Cinematográfico (altura só é expandida via JS quando o modo cine está ativo) -->
+        <div class="cine-track" data-cine-track>
+          <!-- Palco Fotográfico GIGANTE de Grande Escala em Largura Total -->
+          <div class="situacoes-cinematic-stage" data-cine-stage>
+
+            <!-- Camadas Fotográficas de Grande Escala -->
+            <div class="situacao-photo-layers" data-cine-photos>
+              <div class="situacao-photo-layer active" id="situacaoPhoto0" data-cine-layer="0">
+                <img src="../assets/images/acompanhamento-hospital.jpg" alt="Acompanhamento particular de enfermagem no hospital" loading="lazy">
+              </div>
+              <div class="situacao-photo-layer" id="situacaoPhoto1" data-cine-layer="1">
+                <img src="../assets/images/acompanhamento-casa.jpg" alt="Acompanhamento particular de enfermagem em casa" loading="lazy">
+              </div>
+              <div class="situacao-photo-layer" id="situacaoPhoto2" data-cine-layer="2">
+                <img src="../assets/images/acompanhamento-delicado.jpg" alt="Acompanhamento de enfermagem em momentos delicados" loading="lazy">
+              </div>
             </div>
-            <div class="situacao-photo-layer" id="situacaoPhoto1">
-              <img src="../assets/images/acompanhamento-casa.jpg" alt="Acompanhamento particular de enfermagem em casa" loading="lazy">
+
+            <!-- Vinheta Escura de Proteção do Texto -->
+            <div class="situacao-vignette-overlay" aria-hidden="true"></div>
+
+            <!-- Cartão Editorial Flutuante sobre a Fotografia Grande -->
+            <div class="situacao-floating-card" data-cine-panels>
+
+              <!-- Estado 01: Hospital -->
+              <div class="situacao-text-panel active" id="situacaoPanel0" data-cine-layer="0">
+                <span class="panel-badge">01 / 03 · HOSPITALAR</span>
+                <h3>NO HOSPITAL</h3>
+                <p class="panel-lead">Quando um familiar está hospitalizado.</p>
+                <p class="panel-desc">Acompanhamento particular de enfermagem durante o período de internação, garantindo vigilância técnica, suporte contínuo e tranquilidade para a família.</p>
+                <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20no%20hospital." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-hospital">
+                  Explicar situação no hospital no WhatsApp →
+                </a>
+              </div>
+
+              <!-- Estado 02: Casa -->
+              <div class="situacao-text-panel" id="situacaoPanel1" data-cine-layer="1">
+                <span class="panel-badge">02 / 03 · DOMICILIAR</span>
+                <h3>EM CASA</h3>
+                <p class="panel-lead">Quando o acompanhamento acontece no ambiente familiar.</p>
+                <p class="panel-desc">Acompanhamento particular de enfermagem em domicílio para idosos e outros pacientes, oferecendo segurança profissional dentro da rotina de casa.</p>
+                <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20em%20casa." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-casa" tabindex="-1">
+                  Explicar situação em casa no WhatsApp →
+                </a>
+              </div>
+
+              <!-- Estado 03: Momentos Delicados -->
+              <div class="situacao-text-panel" id="situacaoPanel2" data-cine-layer="2">
+                <span class="panel-badge">03 / 03 · FASE TERMINAL</span>
+                <h3>EM MOMENTOS DELICADOS</h3>
+                <p class="panel-lead">Quando presença e atenção se tornam ainda mais importantes.</p>
+                <p class="panel-desc">Acompanhamento de enfermagem em cuidados paliativos e fase terminal, priorizando conforto, alívio de dor e presença humanizada.</p>
+                <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20em%20momento%20delicado." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-delicado" tabindex="-1">
+                  Explicar situação delicada no WhatsApp →
+                </a>
+              </div>
+
             </div>
-            <div class="situacao-photo-layer" id="situacaoPhoto2">
-              <img src="../assets/images/acompanhamento-delicado.jpg" alt="Acompanhamento de enfermagem em momentos delicados" loading="lazy">
-            </div>
+
           </div>
-
-          <!-- Vinheta Escura de Proteção do Texto -->
-          <div class="situacao-vignette-overlay" aria-hidden="true"></div>
-
-          <!-- Cartão Editorial Flutuante sobre a Fotografia Grande -->
-          <div class="situacao-floating-card">
-            
-            <!-- Estado 01: Hospital -->
-            <div class="situacao-text-panel active" id="situacaoPanel0">
-              <span class="panel-badge">01 / 03 · HOSPITALAR</span>
-              <h3>NO HOSPITAL</h3>
-              <p class="panel-lead">Quando um familiar está hospitalizado.</p>
-              <p class="panel-desc">Acompanhamento particular de enfermagem durante o período de internação, garantindo vigilância técnica, suporte contínuo e tranquilidade para a família.</p>
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20no%20hospital." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-hospital">
-                Explicar situação no hospital no WhatsApp →
-              </a>
-            </div>
-
-            <!-- Estado 02: Casa -->
-            <div class="situacao-text-panel" id="situacaoPanel1">
-              <span class="panel-badge">02 / 03 · DOMICILIAR</span>
-              <h3>EM CASA</h3>
-              <p class="panel-lead">Quando o acompanhamento acontece no ambiente familiar.</p>
-              <p class="panel-desc">Acompanhamento particular de enfermagem em domicílio para idosos e outros pacientes, oferecendo segurança profissional dentro da rotina de casa.</p>
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20em%20casa." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-casa">
-                Explicar situação em casa no WhatsApp →
-              </a>
-            </div>
-
-            <!-- Estado 03: Momentos Delicados -->
-            <div class="situacao-text-panel" id="situacaoPanel2">
-              <span class="panel-badge">03 / 03 · FASE TERMINAL</span>
-              <h3>EM MOMENTOS DELICADOS</h3>
-              <p class="panel-lead">Quando presença e atenção se tornam ainda mais importantes.</p>
-              <p class="panel-desc">Acompanhamento de enfermagem em cuidados paliativos e fase terminal, priorizando conforto, alívio de dor e presença humanizada.</p>
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20em%20momento%20delicado." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-delicado">
-                Explicar situação delicada no WhatsApp →
-              </a>
-            </div>
-
-          </div>
-
         </div>
 
       </div>
@@ -572,76 +575,216 @@
   <!-- Script global da aplicação (Empacotado pelo Vite) -->
   <script type="module" src="/scripts/main.js"></script>
 
-  <!-- Script Dedicado: Full-Viewport Scroll Storytelling & Reveal Único do Manifesto -->
+  <!-- Script Dedicado: Sequência Cinematográfica Ligada à Rolagem + Reveal Editorial do Manifesto -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Selector Interativo de Situações (Abas & Botões Selecionáveis)
-      const tabBtns = document.querySelectorAll('.situacao-tab-btn');
-      const textPanels = document.querySelectorAll('.situacao-text-panel');
-      const photoLayers = document.querySelectorAll('.situacao-photo-layer');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const supportsIO = 'IntersectionObserver' in window;
+      const clamp01 = (v) => Math.min(1, Math.max(0, v));
 
-      if (tabBtns.length > 0 && textPanels.length > 0 && photoLayers.length > 0) {
+      // ============ 1. Sequência Cinematográfica: Hospital → Casa → Momentos Delicados ============
+      const tabBtns = Array.from(document.querySelectorAll('.situacao-tab-btn'));
+      const textPanels = Array.from(document.querySelectorAll('.situacao-text-panel'));
+      const photoLayers = Array.from(document.querySelectorAll('.situacao-photo-layer'));
+      const cineTrack = document.querySelector('[data-cine-track]');
+      const cineStage = document.querySelector('[data-cine-stage]');
+
+      if (tabBtns.length && textPanels.length && photoLayers.length) {
+        const sceneCount = textPanels.length;
+        const desktopQuery = window.matchMedia('(min-width: 881px)');
+        const topOffset = 88; // altura aproximada do header fixo
+
+        let cineEnabled = false;
+        let rafId = null;
+        let sceneObserver = null;
+
+        // Estado estático de fallback (clique simples): usado no mobile, reduced-motion ou sem IO
+        function setActiveScene(idx) {
+          tabBtns.forEach((btn, i) => {
+            const isActive = i === idx;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          });
+
+          textPanels.forEach((panel, i) => {
+            const isActive = i === idx;
+            panel.classList.toggle('active', isActive);
+            panel.style.opacity = '';
+            panel.style.transform = '';
+            const link = panel.querySelector('a');
+            if (link) link.tabIndex = isActive ? 0 : -1;
+          });
+
+          photoLayers.forEach((photo, i) => {
+            photo.classList.toggle('active', i === idx);
+            photo.style.opacity = '';
+            photo.style.transform = '';
+          });
+        }
+
+        // Progresso contínuo (0..1) do trilho aplicado como profundidade de câmera: as camadas
+        // fora de foco recuam (opacity/scale) enquanto a cena central ganha nitidez e posição neutra.
+        function applyCineProgress(progress) {
+          const sp = progress * (sceneCount - 1);
+          let closestIdx = 0;
+          let closestDist = Infinity;
+
+          photoLayers.forEach((photo, i) => {
+            const rel = sp - i;
+            const dist = Math.min(Math.abs(rel), 1);
+            photo.style.opacity = (1 - dist).toFixed(3);
+            photo.style.transform = `translateY(${(rel * 16).toFixed(2)}px) scale(${(1 + dist * 0.05).toFixed(3)})`;
+            photo.classList.toggle('active', dist < 0.5);
+            if (dist < closestDist) { closestDist = dist; closestIdx = i; }
+          });
+
+          textPanels.forEach((panel, i) => {
+            const rel = sp - i;
+            // Texto usa uma curva mais estreita que a foto: evita duas cenas de texto
+            // legível sobrepostas ao mesmo tempo (a foto pode se misturar, o texto não).
+            const textDist = Math.min(Math.abs(rel) * 1.9, 1);
+            const isActive = textDist < 0.5;
+            panel.style.opacity = (1 - textDist).toFixed(3);
+            panel.style.transform = `translateY(${(rel * 34).toFixed(2)}px)`;
+            panel.classList.toggle('active', isActive);
+            const link = panel.querySelector('a');
+            if (link) link.tabIndex = isActive ? 0 : -1;
+          });
+
+          tabBtns.forEach((btn, i) => {
+            const isActive = i === closestIdx;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          });
+        }
+
+        function tick() {
+          const trackRect = cineTrack.getBoundingClientRect();
+          const pinRange = trackRect.height - cineStage.offsetHeight;
+          const progress = pinRange > 0 ? clamp01((topOffset - trackRect.top) / pinRange) : 0;
+          applyCineProgress(progress);
+          rafId = requestAnimationFrame(tick);
+        }
+
+        function startLoop() {
+          if (rafId === null) rafId = requestAnimationFrame(tick);
+        }
+
+        function stopLoop() {
+          if (rafId !== null) {
+            cancelAnimationFrame(rafId);
+            rafId = null;
+          }
+        }
+
+        function enableCine() {
+          if (cineEnabled) return;
+          cineEnabled = true;
+          cineTrack.classList.add('cine-enabled');
+          cineStage.classList.add('cine-pin');
+
+          if (supportsIO) {
+            sceneObserver = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) startLoop();
+                else stopLoop();
+              });
+            }, { rootMargin: '15% 0px 15% 0px' });
+            sceneObserver.observe(cineTrack);
+          } else {
+            startLoop();
+          }
+        }
+
+        function disableCine() {
+          stopLoop();
+          if (sceneObserver) {
+            sceneObserver.disconnect();
+            sceneObserver = null;
+          }
+          if (cineEnabled) {
+            cineEnabled = false;
+            cineTrack.classList.remove('cine-enabled');
+            cineStage.classList.remove('cine-pin');
+          }
+          const activeIdx = tabBtns.findIndex((b) => b.classList.contains('active'));
+          setActiveScene(activeIdx >= 0 ? activeIdx : 0);
+        }
+
+        function scrollToScene(idx) {
+          if (!cineEnabled) return false;
+          const trackRect = cineTrack.getBoundingClientRect();
+          const pinRange = trackRect.height - cineStage.offsetHeight;
+          if (pinRange <= 0) return false;
+          const targetProgress = idx / (sceneCount - 1);
+          const trackTopAbs = window.scrollY + trackRect.top;
+          const targetY = trackTopAbs - topOffset + targetProgress * pinRange;
+          window.scrollTo({ top: targetY, behavior: reduceMotion ? 'auto' : 'smooth' });
+          return true;
+        }
+
         tabBtns.forEach((btn) => {
           btn.addEventListener('click', () => {
             const targetIdx = parseInt(btn.getAttribute('data-tab'), 10);
-
-            // Alternar Estado dos Botões
-            tabBtns.forEach((b, idx) => {
-              const isActive = idx === targetIdx;
-              b.classList.toggle('active', isActive);
-              b.setAttribute('aria-selected', isActive ? 'true' : 'false');
-            });
-
-            // Alternar Painel de Texto
-            textPanels.forEach((panel, idx) => {
-              panel.classList.toggle('active', idx === targetIdx);
-            });
-
-            // Alternar Camada de Fotografia
-            photoLayers.forEach((photo, idx) => {
-              photo.classList.toggle('active', idx === targetIdx);
-            });
-          });
-        });
-      }
-
-      // 2. Direção de Arte Editorial em 2 Atos (Single-Fire Observer com Coreografia Fluida em Estágios)
-      const identificacaoSec = document.getElementById('identificacao');
-      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-      if (identificacaoSec && !reduceMotion && 'IntersectionObserver' in window) {
-        identificacaoSec.classList.add('js-animated');
-
-        const identificacaoObserver = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              // Estágio 0: Marcador 01 + Headline 1 do Conflito
-              identificacaoSec.classList.add('is-revealed');
-              
-              // Estágio 1 (180ms): Tensões 01-04 entram com hairlines
-              setTimeout(() => {
-                identificacaoSec.classList.add('stage-1');
-              }, 180);
-
-              // Estágio 2 (550ms): Virada em Newsreader Serif Italic "Mas nem sempre consegue."
-              setTimeout(() => {
-                identificacaoSec.classList.add('stage-2');
-              }, 550);
-
-              // Estágio 3 (920ms): Linha de Conexão avança com losango + Marcador 02 + Headline 2 da Solução
-              setTimeout(() => {
-                identificacaoSec.classList.add('stage-3');
-              }, 920);
-
-              // Estágio 4 (1250ms): CTA Editorial de Luxo + Microcopy entram como desfecho
-              setTimeout(() => {
-                identificacaoSec.classList.add('stage-4');
-              }, 1250);
-
-              identificacaoObserver.unobserve(entry.target);
+            if (!scrollToScene(targetIdx)) {
+              setActiveScene(targetIdx);
             }
           });
-        }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+        });
+
+        if (cineTrack && cineStage) {
+          function evaluateMode() {
+            const shouldEnable = !reduceMotion && supportsIO && desktopQuery.matches;
+            if (shouldEnable) enableCine();
+            else disableCine();
+          }
+
+          evaluateMode();
+
+          let resizeTimer = null;
+          window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(evaluateMode, 200);
+          });
+        }
+      }
+
+      // ============ 2. Direção de Arte Editorial em 2 Atos — revelação contínua ligada à rolagem ============
+      // Dá continuidade visual ao movimento da sequência acima: em vez de um disparo único por
+      // temporizador, o progresso é recalculado a cada frame conforme a seção entra na viewport.
+      const identificacaoSec = document.getElementById('identificacao');
+
+      if (identificacaoSec && !reduceMotion && supportsIO) {
+        identificacaoSec.classList.add('js-animated');
+
+        let idRafId = null;
+
+        function tickIdentificacao() {
+          const rect = identificacaoSec.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const start = vh * 0.85;
+          const end = vh * 0.35;
+          const progress = clamp01((start - rect.top) / (start - end));
+
+          identificacaoSec.classList.toggle('is-revealed', progress > 0.02);
+          identificacaoSec.classList.toggle('stage-1', progress > 0.25);
+          identificacaoSec.classList.toggle('stage-2', progress > 0.5);
+          identificacaoSec.classList.toggle('stage-3', progress > 0.75);
+          identificacaoSec.classList.toggle('stage-4', progress > 0.95);
+
+          idRafId = requestAnimationFrame(tickIdentificacao);
+        }
+
+        const identificacaoObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (idRafId === null) idRafId = requestAnimationFrame(tickIdentificacao);
+            } else if (idRafId !== null) {
+              cancelAnimationFrame(idRafId);
+              idRafId = null;
+            }
+          });
+        }, { rootMargin: '15% 0px 15% 0px' });
 
         identificacaoObserver.observe(identificacaoSec);
       }
