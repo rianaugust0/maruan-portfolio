@@ -5,39 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curativos Domiciliares em Goiânia | Enfermeiro Maruan Ramos Vaz</title>
   <meta name="description" content="Precisa realizar ou trocar um curativo em casa? Atendimento particular de enfermagem para curativos em Goiânia e Aparecida de Goiânia. Fale com Maruan.">
+  <meta name="robots" content="index, follow">
+
+  <!-- TODO: Adicionar canonical após definição do domínio oficial -->
+  <!-- <link rel="canonical" href="https://[DOMINIO_OFICIAL]/curativos-domiciliares-goiania/"> -->
   
   <!-- Open Graph / Meta Social -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Curativos Domiciliares em Goiânia | Enfermeiro Maruan Ramos Vaz">
   <meta property="og:description" content="Atendimento particular de enfermagem para troca e acompanhamento de curativos no conforto do seu domicílio em Goiânia e Aparecida de Goiânia.">
-  <meta property="og:image" content="../assets/images/curativo-hero.png">
+  <meta property="og:image" content="/assets/images/curativo-hero.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Curativos Domiciliares em Goiânia | Enfermeiro Maruan Ramos Vaz">
+  <meta name="twitter:description" content="Atendimento particular de enfermagem para troca e acompanhamento de curativos no conforto do seu domicílio em Goiânia e Aparecida de Goiânia.">
+  <meta name="twitter:image" content="/assets/images/curativo-hero.png">
 
   <!-- Favicon System -->
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   
-  <!-- CSS Principal e Estilos Dedicados V2 Refinados -->
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/landing-curativos.css">
+  <!-- CSS Principal e Estilos Dedicados -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/landing-curativos.css">
 
-  <!-- Schema JSON-LD Prudente (Person & Service) -->
+  <!-- Schema JSON-LD (Person & Service) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Person",
+        "@id": "#person",
         "name": "Maruan Ramos Vaz",
         "jobTitle": "Enfermeiro",
-        "alumniOf": "UNESC — Centro Universitário do Espírito Santo",
-        "knowsAbout": ["Enfermagem", "Curativos Domiciliares"]
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "UNESC — Centro Universitário do Espírito Santo"
+        },
+        "knowsAbout": ["Enfermagem", "Curativos Domiciliares", "Tratamento de Feridas"]
       },
       {
         "@type": "Service",
@@ -45,18 +60,19 @@
         "serviceType": "Enfermagem Domiciliar",
         "provider": {
           "@type": "Person",
-          "name": "Maruan Ramos Vaz"
+          "@id": "#person"
         },
         "areaServed": [
           {
-            "@type": "AdministrativeArea",
+            "@type": "City",
             "name": "Goiânia"
           },
           {
-            "@type": "AdministrativeArea",
+            "@type": "City",
             "name": "Aparecida de Goiânia"
           }
-        ]
+        ],
+        "description": "Atendimento particular de enfermagem para realização, troca e acompanhamento de curativos em Goiânia e Aparecida de Goiânia."
       }
     ]
   }
@@ -69,7 +85,7 @@
 <!-- ============ HEADER V2 DE SERVIÇO DEDICADO ============ -->
 <header class="nav nav-landing-v2" id="siteNav">
   <div class="nav-inner">
-    <a href="../" class="nav-brand">
+    <a href="/" class="nav-brand" aria-label="Maruan Ramos Vaz - Home">
       <svg class="header-brand-symbol" width="18" height="18" viewBox="0 0 512 512" fill="none" aria-hidden="true">
         <rect width="512" height="512" rx="108" fill="#0D2933"/>
         <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
@@ -80,12 +96,12 @@
         <span class="sub-service-tag">CURATIVOS DOMICILIARES</span>
       </span>
     </a>
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="Navegação da página">
       <a href="#atendimento">Posso ajudar</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#quem-atende">Sobre mim</a>
       <a href="#faq">Dúvidas</a>
-      <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20domiciliar%20e%20gostaria%20de%20explicar%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="nav-cta" data-cta="curativos-header">Falar comigo</a>
+      <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="nav-cta" data-cta="curativos-header-whatsapp" data-conversion="whatsapp" data-service="curativos" data-position="header" data-location="goiania">Falar comigo</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
       <span></span>
@@ -93,310 +109,380 @@
   </div>
 </header>
 
-<!-- ============ HERO — RESPOSTA IMEDIATA ============ -->
-<section class="hero-curativos-v3">
-  <div class="wrap">
-    <div class="hero-curativos-grid">
-      <div class="hero-curativos-content">
-        <div class="service-eyebrow-v2 reveal" data-reveal>
-          <span class="mark-diamond-v2" aria-hidden="true"></span>
-          <span>CURATIVOS · ATENDIMENTO PARTICULAR DE ENFERMAGEM</span>
-        </div>
-
-        <h1 class="hero-curativos-title reveal" data-reveal>
-          <span class="title-main">Precisa realizar ou trocar <span class="curativos-accent-sage">um curativo?</span></span>
-          <span class="title-sub-serif">Eu posso ir até você.</span>
-        </h1>
-
-        <p class="hero-curativos-lead reveal" data-reveal>
-          Atendimento em domicílio, hospital ou clínica, em Goiânia e Aparecida de Goiânia. Me conte o que você precisa e eu te explico como podemos realizar o atendimento.
-        </p>
-
-        <div class="hero-curativos-cta-group reveal" data-reveal>
-          <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20domiciliar%20e%20gostaria%20de%20explicar%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-primary-v2" data-cta="curativos-hero">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
-            Explicar o que preciso no WhatsApp
-          </a>
-        </div>
-
-        <div class="hero-curativos-specs reveal" data-reveal>
-          <span class="spec-tag">DOMICÍLIO</span>
-          <span class="spec-sep">·</span>
-          <span class="spec-tag">HOSPITAL</span>
-          <span class="spec-sep">·</span>
-          <span class="spec-tag">CLÍNICA</span>
-        </div>
-      </div>
-
-      <!-- Imagem do Procedimento no Hero -->
-      <div class="hero-curativos-portrait reveal-mask" data-reveal>
-        <div class="procedure-frame">
-          <img src="../assets/images/curativo-hero.png" alt="Procedimento e cuidado de curativo domiciliar">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SEÇÃO 01 · COMO POSSO TE AJUDAR ============ -->
-<section class="sec-curativos-ajudar" id="atendimento">
-  <div class="wrap">
-    <div class="v2-section-head reveal" data-reveal>
-      <div class="eyebrow-v2"><span class="folio">01 ◇</span><span class="tick"></span>COMO POSSO TE AJUDAR</div>
-      <h2>Em qual dessas situações você está?</h2>
-    </div>
-
-    <div class="curativos-list-editorial reveal" data-reveal>
-      <!-- Item 01 -->
-      <div class="curativo-row-item">
-        <span class="item-num">01</span>
-        <div class="item-info">
-          <h3>PRECISA FAZER UM CURATIVO?</h3>
-          <p>Realizo o atendimento de acordo com a necessidade apresentada e as orientações disponíveis para o cuidado.</p>
-        </div>
-      </div>
-
-      <!-- Item 02 -->
-      <div class="curativo-row-item">
-        <span class="item-num">02</span>
-        <div class="item-info">
-          <h3>JÁ ESTÁ FAZENDO E PRECISA TROCAR?</h3>
-          <p>Posso realizar a troca e observar as condições apresentadas no momento do atendimento.</p>
-        </div>
-      </div>
-
-      <!-- Item 03 -->
-      <div class="curativo-row-item">
-        <span class="item-num">03</span>
-        <div class="item-info">
-          <h3>PRECISA CONTINUAR UM CUIDADO JÁ ORIENTADO?</h3>
-          <p>Se você recebeu orientações para continuidade do curativo, me envie as informações disponíveis para verificarmos o atendimento.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- BLOCO PETRÓLEO / OBJEÇÃO DE CURATIVO -->
-    <div class="uncertainty-microbox reveal" data-reveal>
-      <div class="microbox-text">
-        <span class="eyebrow-v2-dark" style="margin-bottom: 8px; font-size: 0.75rem; letter-spacing: 0.14em; color: var(--sage);">NÃO SABE QUAL CURATIVO PRECISA?</span>
-        <h4 style="font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: 1.8rem; font-weight: 400; color: var(--white); margin-bottom: 8px;">Você não precisa saber.</h4>
-        <p style="color: var(--slate); opacity: 0.92; font-size: 0.98rem;">Me conte o que aconteceu e envie as informações que tiver. Eu verifico sua necessidade antes de combinarmos o atendimento.</p>
-      </div>
-      <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20domiciliar%20e%20gostaria%20de%20explicar%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-primary-v2" data-cta="curativos-servico">Explicar minha situação →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SEÇÃO 02 · COMO FUNCIONA ============ -->
-<section class="sec-curativos-como-funciona" id="como-funciona">
-  <div class="wrap">
-    <div class="v2-section-head reveal" data-reveal>
-      <div class="eyebrow-v2"><span class="folio">02 ◇</span><span class="tick"></span>COMO FUNCIONA</div>
-      <h2>Você me chama. Eu entendo a situação. E combinamos o atendimento.</h2>
-    </div>
-
-    <div class="como-funciona-flow-editorial">
-      <!-- Passo 01 -->
-      <div class="step-editorial-row reveal" data-reveal>
-        <span class="step-num-serif">01</span>
-        <div class="step-body-editorial">
-          <h3>ME CONTE O QUE PRECISA</h3>
-          <p>Me explique a situação pelo WhatsApp e, se tiver orientações sobre o curativo, pode me enviar.</p>
-        </div>
-      </div>
-
-      <!-- Passo 02 -->
-      <div class="step-editorial-row reveal" data-reveal>
-        <span class="step-num-serif">02</span>
-        <div class="step-body-editorial">
-          <h3>EU VERIFICO COMO POSSO TE ATENDER</h3>
-          <p>Analiso as informações iniciais e verifico o que será necessário para o atendimento.</p>
-        </div>
-      </div>
-
-      <!-- Passo 03 -->
-      <div class="step-editorial-row reveal" data-reveal>
-        <span class="step-num-serif">03</span>
-        <div class="step-body-editorial">
-          <h3>COMBINAMOS O ATENDIMENTO</h3>
-          <p>Alinhamos o local e os detalhes necessários para realizar o curativo.</p>
-        </div>
-      </div>
-    </div>
-
-    <div style="margin-top: 40px; text-align: left;" class="reveal" data-reveal>
-      <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20domiciliar%20e%20gostaria%20de%20explicar%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-primary-v2" data-cta="curativos-como-funciona">Quero falar com Maruan →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SEÇÃO 03 · QUEM VAI TE ATENDER ============ -->
-<section class="sec-curativos-quem-atende" id="quem-atende">
-  <div class="wrap">
-    <div class="quem-atende-grid">
-      <div class="quem-atende-photo reveal-mask" data-reveal>
-        <img src="../assets/images/maruan-sobre.jpg" alt="Maruan Ramos Vaz — Enfermeiro">
-        <span class="frame-mark tl" aria-hidden="true"></span>
-        <span class="frame-mark br" aria-hidden="true"></span>
-      </div>
-
-      <div class="quem-atende-content reveal" data-reveal>
-        <div class="eyebrow-v2"><span class="folio">03 ◇</span><span class="tick"></span>QUEM VAI TE ATENDER</div>
-        <h2>Conheça quem vai realizar o seu atendimento.</h2>
-        
-        <p class="bio-lead-intro">
-          Meu nome é Maruan.
-        </p>
-
-        <p class="bio-lead">
-          Sou Maruan Ramos Vaz, enfermeiro graduado pela UNESC. Durante minha formação, tive vivência acadêmica em Clínica de Feridas, com atividades envolvendo realização de curativos, avaliação e acompanhamento de lesões e cuidados relacionados à segurança e prevenção de infecções.
-        </p>
-        
-        <p class="bio-lead">
-          Hoje realizo atendimentos particulares de enfermagem em Goiânia e Aparecida de Goiânia.
-        </p>
-
-        <div class="credentials-block">
-          <div class="credential-item">
-            <span class="cred-tag">GRADUAÇÃO EM ENFERMAGEM</span>
-            <span class="cred-title">UNESC — Centro Universitário do Espírito Santo</span>
+<main>
+  <!-- ============ HERO — RESPOSTA IMEDIATA ============ -->
+  <section class="hero-curativos-v3">
+    <div class="wrap">
+      <div class="hero-curativos-grid">
+        <div class="hero-curativos-content">
+          <div class="service-eyebrow-v2 reveal" data-reveal>
+            <span class="mark-diamond-v2" aria-hidden="true"></span>
+            <span>CURATIVOS · ATENDIMENTO PARTICULAR DE ENFERMAGEM</span>
           </div>
 
-          <div class="credential-item">
-            <span class="cred-tag">CLÍNICA DE FERIDAS</span>
-            <span class="cred-title">UNESC · Vivência acadêmica</span>
+          <h1 class="hero-curativos-title reveal" data-reveal>
+            <span class="title-main">Precisa realizar ou trocar <span class="curativos-accent-sage">um curativo?</span></span>
+            <span class="title-sub-serif">Eu posso ir até você.</span>
+          </h1>
+
+          <p class="hero-curativos-lead reveal" data-reveal>
+            Atendimento em domicílio, hospital ou clínica, em Goiânia e Aparecida de Goiânia. Me conte o que você precisa e eu te explico como podemos realizar o atendimento.
+          </p>
+
+          <div class="hero-curativos-cta-group reveal" data-reveal>
+            <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-primary-v2" data-cta="curativos-hero-whatsapp" data-conversion="whatsapp" data-service="curativos" data-position="hero" data-location="goiania">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
+              Explicar o que preciso no WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-curativos-specs reveal" data-reveal>
+            <span class="spec-tag">DOMICÍLIO</span>
+            <span class="spec-sep">·</span>
+            <span class="spec-tag">HOSPITAL</span>
+            <span class="spec-sep">·</span>
+            <span class="spec-tag">CLÍNICA</span>
           </div>
         </div>
 
-        <div class="quem-atende-signature">
-          <blockquote class="serif">“Conhecimento para cuidar. Presença para acolher.”</blockquote>
+        <!-- Imagem do Procedimento no Hero -->
+        <div class="hero-curativos-portrait reveal-mask" data-reveal>
+          <div class="procedure-frame">
+            <img src="/assets/images/curativo-hero.png" alt="Procedimento e cuidado de curativo domiciliar" width="1024" height="1024" fetchpriority="high" decoding="async">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ SEÇÃO 04 · ANTES DE ME CHAMAR (FAQ / OBJEÇÕES) ============ -->
-<section class="sec-curativos-faq" id="faq">
-  <div class="wrap">
-    <div class="faq-head-col reveal" data-reveal>
-      <div class="eyebrow-v2"><span class="folio">04 ◇</span><span class="tick"></span>ANTES DE ME CHAMAR</div>
-      <h2>Talvez sua dúvida esteja aqui.</h2>
-    </div>
-
-    <div class="faq-list-v2 reveal" data-reveal>
-      <!-- Q1 -->
-      <details class="faq-item-v2">
-        <summary class="faq-summary-v2">
-          <span>Você vai até minha casa?</span>
-          <span class="faq-icon-v2" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-answer-v2">
-          <p>Sim. Realizo atendimentos particulares em domicílio em Goiânia e Aparecida de Goiânia. O atendimento também pode ocorrer em hospital ou clínica, conforme a situação.</p>
-        </div>
-      </details>
-
-      <!-- Q2 -->
-      <details class="faq-item-v2">
-        <summary class="faq-summary-v2">
-          <span>Não sei qual tipo de curativo preciso. Posso chamar mesmo assim?</span>
-          <span class="faq-icon-v2" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-answer-v2">
-          <p>Sim. Você não precisa saber o nome do curativo para entrar em contato. Me explique o que aconteceu e envie as informações que tiver.</p>
-        </div>
-      </details>
-
-      <!-- Q3 -->
-      <details class="faq-item-v2">
-        <summary class="faq-summary-v2">
-          <span>Posso falar com você antes de combinar o atendimento?</span>
-          <span class="faq-icon-v2" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-answer-v2">
-          <p>Sim. O primeiro contato é justamente para entender as informações iniciais e verificar como posso te atender.</p>
-        </div>
-      </details>
-
-      <!-- Q4 -->
-      <details class="faq-item-v2">
-        <summary class="faq-summary-v2">
-          <span>O atendimento é somente em Goiânia?</span>
-          <span class="faq-icon-v2" aria-hidden="true">+</span>
-        </summary>
-        <div class="faq-answer-v2">
-          <p>Atendo Goiânia e Aparecida de Goiânia.</p>
-        </div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA FINAL & FOOTER ============ -->
-<section class="sec-curativos-cta-final" id="contato">
-  <div class="wrap">
-    <div class="fechamento-dark-layout-v2 reveal" data-reveal>
-      <div class="fechamento-text-col">
-        <div class="eyebrow-v2-dark"><span class="folio">PRONTO PARA FALAR COMIGO?</span></div>
-        <h2 class="fechamento-title-v2">
-          Vamos entender o que você precisa.
-        </h2>
-        <p style="font-size: 1.08rem; color: var(--slate); opacity: 0.9; margin-top: 12px;">
-          Me conte pelo WhatsApp a situação do curativo e as informações que você tiver.
-        </p>
+  <!-- ============ SEÇÃO 01 · COMO POSSO TE AJUDAR ============ -->
+  <section class="sec-curativos-ajudar" id="atendimento">
+    <div class="wrap">
+      <div class="v2-section-head reveal" data-reveal>
+        <div class="eyebrow-v2"><span class="folio">01 ◇</span><span class="tick"></span>COMO POSSO TE AJUDAR</div>
+        <h2>Em qual dessas situações você está?</h2>
       </div>
 
-      <div class="fechamento-cta-col">
-        <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20domiciliar%20e%20gostaria%20de%20explicar%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-primary-v2" data-cta="curativos-final">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
-          Falar com Maruan no WhatsApp
+      <div class="curativos-list-editorial reveal" data-reveal>
+        <!-- Item 01 -->
+        <div class="curativo-row-item">
+          <span class="item-num">01</span>
+          <div class="item-info">
+            <h3>PRECISA FAZER UM CURATIVO?</h3>
+            <p>Realizo o atendimento de acordo com a necessidade apresentada e as orientações disponíveis para o cuidado.</p>
+          </div>
+        </div>
+
+        <!-- Item 02 -->
+        <div class="curativo-row-item">
+          <span class="item-num">02</span>
+          <div class="item-info">
+            <h3>JÁ ESTÁ FAZENDO E PRECISA TROCAR?</h3>
+            <p>Posso realizar a troca e observar as condições apresentadas no momento do atendimento.</p>
+          </div>
+        </div>
+
+        <!-- Item 03 -->
+        <div class="curativo-row-item">
+          <span class="item-num">03</span>
+          <div class="item-info">
+            <h3>PRECISA CONTINUAR UM CUIDADO JÁ ORIENTADO?</h3>
+            <p>Se você recebeu orientações para continuidade do curativo, me envie as informações disponíveis para verificarmos o atendimento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCO OBJEÇÃO DE CURATIVO -->
+      <div class="uncertainty-microbox reveal" data-reveal>
+        <div class="microbox-text">
+          <span class="eyebrow-v2-dark" style="margin-bottom: 8px; font-size: 0.75rem; letter-spacing: 0.14em; color: var(--sage);">NÃO SABE QUAL CURATIVO PRECISA?</span>
+          <h4 style="font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: 1.8rem; font-weight: 400; color: var(--white); margin-bottom: 8px;">Você não precisa saber.</h4>
+          <p style="color: var(--slate); opacity: 0.92; font-size: 0.98rem;">Me conte o que aconteceu e envie as informações que tiver. Eu verifico sua necessidade antes de combinarmos o atendimento.</p>
+        </div>
+        <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-primary-v2" data-cta="curativos-microbox-whatsapp" data-conversion="whatsapp" data-service="curativos" data-position="microbox" data-location="goiania">Explicar minha situação →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEÇÃO 02 · COMO FUNCIONA ============ -->
+  <section class="sec-curativos-como-funciona" id="como-funciona">
+    <div class="wrap">
+      <div class="v2-section-head reveal" data-reveal>
+        <div class="eyebrow-v2"><span class="folio">02 ◇</span><span class="tick"></span>COMO FUNCIONA</div>
+        <h2>Você me chama. Eu entendo a situação. E combinamos o atendimento.</h2>
+      </div>
+
+      <div class="como-funciona-flow-editorial">
+        <!-- Passo 01 -->
+        <div class="step-editorial-row reveal" data-reveal>
+          <span class="step-num-serif">01</span>
+          <div class="step-body-editorial">
+            <h3>ME CONTE O QUE PRECISA</h3>
+            <p>Me explique a situação pelo WhatsApp e, se tiver orientações sobre o curativo, pode me enviar.</p>
+          </div>
+        </div>
+
+        <!-- Passo 02 -->
+        <div class="step-editorial-row reveal" data-reveal>
+          <span class="step-num-serif">02</span>
+          <div class="step-body-editorial">
+            <h3>EU VERIFICO COMO POSSO TE ATENDER</h3>
+            <p>Analiso as informações iniciais e verifico o que será necessário para o atendimento.</p>
+          </div>
+        </div>
+
+        <!-- Passo 03 -->
+        <div class="step-editorial-row reveal" data-reveal>
+          <span class="step-num-serif">03</span>
+          <div class="step-body-editorial">
+            <h3>COMBINAMOS O ATENDIMENTO</h3>
+            <p>Alinhamos o local e os detalhes necessários para realizar o curativo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 40px; text-align: left;" class="reveal" data-reveal>
+        <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-primary-v2" data-cta="curativos-process-whatsapp" data-conversion="whatsapp" data-service="curativos" data-position="process" data-location="goiania">Quero falar com Maruan →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEÇÃO 03 · QUEM VAI TE ATENDER ============ -->
+  <section class="sec-curativos-quem-atende" id="quem-atende">
+    <div class="wrap">
+      <div class="quem-atende-grid">
+        <div class="quem-atende-photo reveal-mask" data-reveal>
+          <img src="/assets/images/maruan-sobre.jpg" alt="Maruan Ramos Vaz — Enfermeiro" width="700" height="1024" loading="lazy" decoding="async">
+          <span class="frame-mark tl" aria-hidden="true"></span>
+          <span class="frame-mark br" aria-hidden="true"></span>
+        </div>
+
+        <div class="quem-atende-content reveal" data-reveal>
+          <div class="eyebrow-v2"><span class="folio">03 ◇</span><span class="tick"></span>QUEM VAI TE ATENDER</div>
+          <h2>Conheça quem vai realizar o seu atendimento.</h2>
+          
+          <p class="bio-lead-intro">
+            Meu nome é Maruan.
+          </p>
+
+          <p class="bio-lead">
+            Sou Maruan Ramos Vaz, enfermeiro graduado pela UNESC. Durante minha formação, tive vivência acadêmica em Clínica de Feridas, com atividades envolvendo realização de curativos, avaliação e acompanhamento de lesões e cuidados relacionados à segurança e prevenção de infecções.
+          </p>
+          
+          <p class="bio-lead">
+            Hoje realizo atendimentos particulares de enfermagem em Goiânia e Aparecida de Goiânia.
+          </p>
+
+          <div class="credentials-block">
+            <div class="credential-item">
+              <span class="cred-tag">GRADUAÇÃO EM ENFERMAGEM</span>
+              <span class="cred-title">UNESC — Centro Universitário do Espírito Santo</span>
+            </div>
+
+            <div class="credential-item">
+              <span class="cred-tag">CLÍNICA DE FERIDAS</span>
+              <span class="cred-title">UNESC · Vivência acadêmica</span>
+            </div>
+          </div>
+
+          <div class="quem-atende-signature">
+            <blockquote class="serif">“Conhecimento para cuidar. Presença para acolher.”</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEÇÃO 04 · ANTES DE ME CHAMAR (FAQ / OBJEÇÕES) ============ -->
+  <section class="sec-curativos-faq" id="faq">
+    <div class="wrap">
+      <div class="faq-head-col reveal" data-reveal>
+        <div class="eyebrow-v2"><span class="folio">04 ◇</span><span class="tick"></span>ANTES DE ME CHAMAR</div>
+        <h2>Talvez sua dúvida esteja aqui.</h2>
+      </div>
+
+      <div class="faq-list-v2 reveal" data-reveal>
+        <!-- Q1 -->
+        <details class="faq-item-v2">
+          <summary class="faq-summary-v2">
+            <span>Você vai até minha casa?</span>
+            <span class="faq-icon-v2" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer-v2">
+            <p>Sim. Realizo atendimentos particulares em domicílio em Goiânia e Aparecida de Goiânia. O atendimento também pode ocorrer em hospital ou clínica, conforme a situação.</p>
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="faq-item-v2">
+          <summary class="faq-summary-v2">
+            <span>Não sei qual tipo de curativo preciso. Posso chamar mesmo assim?</span>
+            <span class="faq-icon-v2" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer-v2">
+            <p>Sim. Você não precisa saber o nome do curativo para entrar em contato. Me explique o que aconteceu e envie as informações que tiver.</p>
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="faq-item-v2">
+          <summary class="faq-summary-v2">
+            <span>Posso falar com você antes de combinar o atendimento?</span>
+            <span class="faq-icon-v2" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer-v2">
+            <p>Sim. O primeiro contato é justamente para entender as informações iniciais e verificar como posso te atender.</p>
+          </div>
+        </details>
+
+        <!-- Q4 -->
+        <details class="faq-item-v2">
+          <summary class="faq-summary-v2">
+            <span>O atendimento é somente em Goiânia?</span>
+            <span class="faq-icon-v2" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer-v2">
+            <p>Atendo Goiânia e Aparecida de Goiânia.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEÇÃO EDITORIAL · OUTROS ATENDIMENTOS ============ -->
+  <section class="sec-outros-atendimentos">
+    <div class="wrap">
+      <div class="outros-atendimentos-head reveal" data-reveal>
+        <div class="eyebrow-v2"><span class="folio">◇</span><span class="tick"></span>OUTROS ATENDIMENTOS</div>
+        <h3>Conheça outros atendimentos de enfermagem em Goiânia</h3>
+      </div>
+
+      <div class="outros-atendimentos-grid reveal" data-reveal>
+        <!-- Card Sondagem -->
+        <a href="/passagem-de-sonda-goiania/" class="outro-atendimento-card" data-cta="curativos-cross-sondagem" data-conversion="navigation" data-service="sondagem" data-position="outros_atendimentos" data-location="goiania">
+          <div class="outro-card-body">
+            <h4>Passagem e Troca de Sonda</h4>
+            <p>Atendimento particular para sondagem vesical, nasogástrica, orogástrica e nasoentérica em Goiânia e Aparecida de Goiânia.</p>
+          </div>
+          <span class="outro-card-link">Ver atendimento de sonda →</span>
         </a>
-        <p class="fechamento-microcopy-v2">GOIÂNIA · APARECIDA DE GOIÂNIA</p>
-      </div>
 
-      <div class="fechamento-brand-col">
-        <div class="brand-mark-box">
-          <span class="mark-diamond-v2" aria-hidden="true"></span>
-          <span class="brand-name-sub">CURATIVOS DOMICILIARES</span>
-          <span class="brand-city-sub">GOIÂNIA · APARECIDA DE GOIÂNIA</span>
+        <!-- Card Acompanhamento -->
+        <a href="/acompanhamento-de-enfermagem-goiania/" class="outro-atendimento-card" data-cta="curativos-cross-acompanhamento" data-conversion="navigation" data-service="acompanhamento" data-position="outros_atendimentos" data-location="goiania">
+          <div class="outro-card-body">
+            <h4>Acompanhamento de Enfermagem</h4>
+            <p>Acompanhamento particular em domicílio e hospitais para idosos, pacientes hospitalizados e cuidados paliativos.</p>
+          </div>
+          <span class="outro-card-link">Ver acompanhamento →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="sec-curativos-cta-final" id="contato">
+    <div class="wrap">
+      <div class="fechamento-dark-layout-v2 reveal" data-reveal>
+        <div class="fechamento-text-col">
+          <div class="eyebrow-v2-dark"><span class="folio">PRONTO PARA FALAR COMIGO?</span></div>
+          <h2 class="fechamento-title-v2">
+            Vamos entender o que você precisa.
+          </h2>
+          <p style="font-size: 1.08rem; color: var(--slate); opacity: 0.9; margin-top: 12px;">
+            Me conte pelo WhatsApp a situação do curativo e as informações que você tiver.
+          </p>
+        </div>
+
+        <div class="fechamento-cta-col">
+          <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-primary-v2" data-cta="curativos-final-whatsapp" data-conversion="whatsapp" data-service="curativos" data-position="final" data-location="goiania">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
+            Falar com Maruan no WhatsApp
+          </a>
+          <p class="fechamento-microcopy-v2">GOIÂNIA · APARECIDA DE GOIÂNIA</p>
+        </div>
+
+        <div class="fechamento-brand-col">
+          <div class="brand-mark-box">
+            <span class="mark-diamond-v2" aria-hidden="true"></span>
+            <span class="brand-name-sub">CURATIVOS DOMICILIARES</span>
+            <span class="brand-city-sub">GOIÂNIA · APARECIDA DE GOIÂNIA</span>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+</main>
 
-    <footer class="footer-global-premium">
-      <div class="footer-brand-row">
-        <div class="footer-brand-main">
-          <svg class="footer-brand-symbol" width="22" height="22" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+<!-- ============ FOOTER PRINCIPAL DE LUXO (AUTÔNOMO) ============ -->
+<footer class="footer-signature-editorial">
+  <div class="wrap">
+    <!-- Nível 01 -->
+    <div class="footer-level-upper">
+      <!-- Lado Esquerdo: Marca Institucional & Assinatura -->
+      <div class="footer-col-brand">
+        <div class="footer-brand-header">
+          <svg class="footer-brand-symbol" width="32" height="32" viewBox="0 0 512 512" fill="none" aria-hidden="true">
             <rect width="512" height="512" rx="108" fill="#0D2933"/>
             <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
             <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#0D2933"/>
           </svg>
-          <span class="footer-brand-name">MARUAN RAMOS VAZ</span>
-          <span class="footer-brand-role">Enfermeiro</span>
+          <div class="footer-brand-titles">
+            <span class="footer-brand-name">MARUAN RAMOS VAZ</span>
+            <span class="footer-brand-role">Enfermeiro</span>
+          </div>
         </div>
-
-        <nav class="footer-services-nav" aria-label="Navegação de atendimentos no rodapé">
-          <a href="../">Home</a>
-          <span class="nav-sep" aria-hidden="true">·</span>
-          <a href="../passagem-de-sonda-goiania/">Passagem de Sonda</a>
-          <span class="nav-sep" aria-hidden="true">·</span>
-          <a href="../acompanhamento-de-enfermagem-goiania/">Acompanhamento</a>
-        </nav>
+        <p class="footer-tagline-serif">
+          Conhecimento para cuidar.<br>Presença para acolher.
+        </p>
       </div>
 
-      <div class="footer-meta-row">
-        <div class="footer-tagline">“Conhecimento para cuidar. Presença para acolher.”</div>
-        <div class="footer-location">Goiânia · Aparecida de Goiânia</div>
-        <div class="footer-copy">© 2026 Maruan Ramos Vaz. Todos os direitos reservados.</div>
+      <!-- Lado Direito: Atendimentos -->
+      <div class="footer-col-nav">
+        <span class="footer-nav-heading">ATENDIMENTOS</span>
+        <ul class="footer-nav-list">
+          <li>
+            <a href="/cuidados-picc-goiania/">
+              <span>Cuidados com PICC</span>
+              <span class="nav-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="/curativos-domiciliares-goiania/">
+              <span>Curativos</span>
+              <span class="nav-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="/passagem-de-sonda-goiania/">
+              <span>Passagem de Sonda</span>
+              <span class="nav-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="/acompanhamento-de-enfermagem-goiania/">
+              <span>Acompanhamento</span>
+              <span class="nav-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+
+    <!-- Hairline Divisória Única -->
+    <div class="footer-hairline" aria-hidden="true"></div>
+
+    <!-- Nível 02 -->
+    <div class="footer-level-lower">
+      <span class="footer-location-sub">GOIÂNIA · APARECIDA DE GOIÂNIA</span>
+      <span class="footer-copy-sub">© 2026 Maruan Ramos Vaz.<br class="footer-copy-br-mobile"> Todos os direitos reservados.</span>
+    </div>
   </div>
-</section>
+</footer>
 
 <!-- ============ BARRA FIXA WHATSAPP MOBILE ============ -->
 <div class="mobile-whatsapp-bar" id="mobileWhatsappBar">
-  <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20domiciliar%20e%20gostaria%20de%20explicar%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="mobile-wa-btn" data-cta="mobile-bar-whatsapp">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
+  <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20curativo%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="mobile-wa-btn" data-cta="curativos-mobile-whatsapp" data-conversion="whatsapp" data-service="curativos" data-position="mobile_bar" data-location="goiania">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
     <span>Falar comigo no WhatsApp</span>
   </a>
 </div>

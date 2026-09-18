@@ -14,14 +14,20 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Passagem de Sonda em Goiânia | Enfermeiro Maruan Ramos Vaz">
   <meta property="og:description" content="Atendimento particular de enfermagem para sondagem em Goiânia e Aparecida de Goiânia. Entre em contato, explique a necessidade e verifique a possibilidade de atendimento.">
-  <meta property="og:image" content="../assets/images/maruan-sobre.jpg">
+  <meta property="og:image" content="/assets/images/sondagem-preparo.png">
   <meta property="og:locale" content="pt_BR">
 
+  <!-- Twitter Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Passagem de Sonda em Goiânia | Enfermeiro Maruan Ramos Vaz">
+  <meta name="twitter:description" content="Atendimento particular de enfermagem para sondagem em Goiânia e Aparecida de Goiânia. Entre em contato, explique a necessidade e verifique a possibilidade de atendimento.">
+  <meta name="twitter:image" content="/assets/images/sondagem-preparo.png">
+
   <!-- Favicon System -->
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +35,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   
   <!-- CSS Principal e Estilos Dedicados Sondagem -->
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/landing-sondagem.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/landing-sondagem.css">
 
   <!-- Schema JSON-LD (Person & Service) -->
   <script type="application/ld+json">
@@ -42,7 +48,10 @@
         "@id": "#person",
         "name": "Maruan Ramos Vaz",
         "jobTitle": "Enfermeiro",
-        "alumniOf": "UNESC — Centro Universitário do Espírito Santo",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "UNESC — Centro Universitário do Espírito Santo"
+        },
         "knowsAbout": ["Enfermagem", "Sondagem Domiciliar", "Passagem de Sonda"]
       },
       {
@@ -74,7 +83,7 @@
   <!-- ============ HEADER / NAVEGAÇÃO ============ -->
   <header class="nav nav-landing-v2 nav-sondagem" id="siteNav">
     <div class="nav-inner">
-      <a href="../index.html" class="nav-brand" aria-label="Maruan Ramos Vaz - Home">
+      <a href="/" class="nav-brand" aria-label="Maruan Ramos Vaz - Home">
         <svg class="header-brand-symbol" width="18" height="18" viewBox="0 0 512 512" fill="none" aria-hidden="true">
           <rect width="512" height="512" rx="108" fill="#0D2933"/>
           <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
@@ -91,7 +100,7 @@
         <a href="#como-funciona">Como funciona</a>
         <a href="#sobre">Sobre Maruan</a>
         <a href="#faq">Dúvidas</a>
-        <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20passagem%20de%20sonda%20e%20gostaria%20de%20explicar%20minha%20necessidade." target="_blank" rel="noopener noreferrer" class="nav-cta" data-cta="sondagem-header">Falar comigo</a>
+        <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20relacionado%20%C3%A0%20passagem%20ou%20troca%20de%20sonda%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="nav-cta" data-cta="sondagem-header-whatsapp" data-conversion="whatsapp" data-service="sondagem" data-position="header" data-location="goiania">Falar comigo</a>
       </nav>
 
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
@@ -125,7 +134,7 @@
             </p>
 
             <div class="hero-sondagem-cta-group">
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20passagem%20de%20sonda%20e%20gostaria%20de%20explicar%20minha%20necessidade." target="_blank" rel="noopener noreferrer" class="btn-primary-sondagem" data-cta="sondagem-hero">
+              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20relacionado%20%C3%A0%20passagem%20ou%20troca%20de%20sonda%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-primary-sondagem" data-cta="sondagem-hero-whatsapp" data-conversion="whatsapp" data-service="sondagem" data-position="hero" data-location="goiania">
                 Explicar o que preciso no WhatsApp →
               </a>
             </div>
@@ -135,7 +144,7 @@
             </span>
           </div>
 
-          <!-- Lado Direito: Composição Tipográfica Arquitetônica em Escala -->
+          <!-- Lado Direito: Composição Tipográfica Arquitetônica -->
           <div class="hero-stack-architectural">
             <div class="stack-item-sondagem item-vesical">
               <span class="stack-num-idx">01</span>
@@ -182,7 +191,7 @@
       </div>
     </section>
 
-    <!-- ============ SEÇÃO 01 ◇ NECESSIDADES DE SONDAGEM (INTERESSE) ============ -->
+    <!-- ============ SEÇÃO 01 ◇ NECESSIDADES DE SONDAGEM ============ -->
     <section class="sec-sondagem-tipos" id="tipos">
       <div class="wrap">
         <div class="tipos-head-block reveal" data-reveal>
@@ -236,7 +245,7 @@
             <p class="quebra-desc-p">
               Você não precisa conhecer os termos técnicos antes de entrar em contato. Me conte o que aconteceu e envie as informações ou orientações que tiver. Eu verifico a necessidade antes de combinarmos o atendimento.
             </p>
-            <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20passagem%20de%20sonda%20e%20gostaria%20de%20explicar%20minha%20necessidade." target="_blank" rel="noopener noreferrer" class="btn-dark-sondagem" data-cta="sondagem-tipos">
+            <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20relacionado%20%C3%A0%20passagem%20ou%20troca%20de%20sonda%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-dark-sondagem" data-cta="sondagem-tipos-whatsapp" data-conversion="whatsapp" data-service="sondagem" data-position="tipos" data-location="goiania">
               Explicar minha situação →
             </a>
           </div>
@@ -280,7 +289,7 @@
             </div>
 
             <div style="margin-top: 36px;">
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20passagem%20de%20sonda%20e%20gostaria%20de%20explicar%20minha%20necessidade." target="_blank" rel="noopener noreferrer" class="btn-primary-sondagem" data-cta="sondagem-como-funciona">
+              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20relacionado%20%C3%A0%20passagem%20ou%20troca%20de%20sonda%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-primary-sondagem" data-cta="sondagem-process-whatsapp" data-conversion="whatsapp" data-service="sondagem" data-position="process" data-location="goiania">
                 Quero falar com Maruan →
               </a>
             </div>
@@ -289,7 +298,7 @@
           <!-- Coluna Direita: Fotografia Editorial de Preparo Preservada -->
           <div class="processo-photo-col">
             <div class="processo-photo-frame">
-              <img src="../assets/images/sondagem-preparo.png" alt="Preparo técnico de sondagem por enfermeiro" loading="lazy">
+              <img src="/assets/images/sondagem-preparo.png" alt="Preparo técnico de sondagem por enfermeiro" width="1024" height="1024" loading="lazy" decoding="async">
               <div class="photo-caption-tag">
                 <span>PREPARO TÉCNICO RIGOROSO</span>
                 <p>Atenção e protocolo de segurança em cada etapa do atendimento.</p>
@@ -306,7 +315,7 @@
         <div class="fotos-strip-grid-3col reveal" data-reveal>
           <div class="foto-strip-item">
             <div class="foto-strip-img">
-              <img src="../assets/images/sondagem-cuidados.png" alt="Cuidados e técnica em sondagem" loading="lazy">
+              <img src="/assets/images/sondagem-cuidados.png" alt="Cuidados e técnica em sondagem" width="1024" height="1024" loading="lazy" decoding="async">
             </div>
             <div class="foto-strip-txt">
               <span>CUIDADOS E TÉCNICA</span>
@@ -316,7 +325,7 @@
 
           <div class="foto-strip-item">
             <div class="foto-strip-img">
-              <img src="../assets/images/sondagem-materiais.png" alt="Materiais e higiene para sondagem" loading="lazy">
+              <img src="/assets/images/sondagem-materiais.png" alt="Materiais e higiene para sondagem" width="1024" height="1024" loading="lazy" decoding="async">
             </div>
             <div class="foto-strip-txt">
               <span>MATERIAIS E HIGIENE</span>
@@ -326,7 +335,7 @@
 
           <div class="foto-strip-item">
             <div class="foto-strip-img">
-              <img src="../assets/images/sondagem-ambiente.png" alt="Avaliação do ambiente de atendimento" loading="lazy">
+              <img src="/assets/images/sondagem-ambiente.png" alt="Avaliação do ambiente de atendimento" width="1024" height="1024" loading="lazy" decoding="async">
             </div>
             <div class="foto-strip-txt">
               <span>AVALIAÇÃO DO AMBIENTE</span>
@@ -344,7 +353,7 @@
           <!-- Foto Real de Maruan Protagonista -->
           <div class="maruan-photo-col">
             <div class="maruan-photo-frame-sondagem">
-              <img src="../assets/images/maruan-sobre.jpg" alt="Maruan Ramos Vaz — Enfermeiro" loading="lazy">
+              <img src="/assets/images/maruan-sobre.jpg" alt="Maruan Ramos Vaz — Enfermeiro" width="700" height="1024" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -379,7 +388,7 @@
       </div>
     </section>
 
-    <!-- ============ SEÇÃO 04 ◇ DÚVIDAS RÁPIDAS (FAQ EDITORIAL ABERTO) ============ -->
+    <!-- ============ SEÇÃO 04 ◇ DÚVIDAS RÁPIDAS (FAQ EDITORIAL) ============ -->
     <section class="sec-sondagem-faq" id="faq">
       <div class="wrap">
         <div class="faq-head-sondagem reveal" data-reveal>
@@ -446,7 +455,37 @@
       </div>
     </section>
 
-    <!-- ============ SEÇÃO 05 ◇ CTA FINAL & FOOTER DARK ============ -->
+    <!-- ============ SEÇÃO EDITORIAL · OUTROS ATENDIMENTOS ============ -->
+    <section class="sec-outros-atendimentos">
+      <div class="wrap">
+        <div class="outros-atendimentos-head reveal" data-reveal>
+          <div class="eyebrow-sondagem"><span class="folio">◇</span><span class="tick"></span>OUTROS ATENDIMENTOS</div>
+          <h3>Conheça outros atendimentos de enfermagem em Goiânia</h3>
+        </div>
+
+        <div class="outros-atendimentos-grid reveal" data-reveal>
+          <!-- Card Curativos -->
+          <a href="/curativos-domiciliares-goiania/" class="outro-atendimento-card" data-cta="sondagem-cross-curativos" data-conversion="navigation" data-service="curativos" data-position="outros_atendimentos" data-location="goiania">
+            <div class="outro-card-body">
+              <h4>Curativos Domiciliares</h4>
+              <p>Atendimento particular de enfermagem para realização, troca e acompanhamento de curativos em Goiânia e Aparecida de Goiânia.</p>
+            </div>
+            <span class="outro-card-link">Ver atendimento de curativos →</span>
+          </a>
+
+          <!-- Card Acompanhamento -->
+          <a href="/acompanhamento-de-enfermagem-goiania/" class="outro-atendimento-card" data-cta="sondagem-cross-acompanhamento" data-conversion="navigation" data-service="acompanhamento" data-position="outros_atendimentos" data-location="goiania">
+            <div class="outro-card-body">
+              <h4>Acompanhamento de Enfermagem</h4>
+              <p>Acompanhamento particular em domicílio e hospitais para idosos, pacientes hospitalizados e cuidados paliativos.</p>
+            </div>
+            <span class="outro-card-link">Ver acompanhamento →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
     <section class="sec-sondagem-final" id="contato">
       <div class="wrap">
         <div class="final-sondagem-content reveal" data-reveal>
@@ -458,49 +497,87 @@
           </p>
 
           <div style="margin-top: 28px;">
-            <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20passagem%20de%20sonda%20e%20gostaria%20de%20explicar%20minha%20necessidade." target="_blank" rel="noopener noreferrer" class="btn-dark-sondagem" data-cta="sondagem-final">
+            <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20relacionado%20%C3%A0%20passagem%20ou%20troca%20de%20sonda%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-dark-sondagem" data-cta="sondagem-final-whatsapp" data-conversion="whatsapp" data-service="sondagem" data-position="final" data-location="goiania">
               Falar com Maruan no WhatsApp →
             </a>
           </div>
 
           <span class="final-micro-location" style="display: block; margin-top: 16px;">GOIÂNIA · APARECIDA DE GOIÂNIA</span>
         </div>
-
-    <footer class="footer-global-premium">
-      <div class="footer-brand-row">
-        <div class="footer-brand-main">
-          <svg class="footer-brand-symbol" width="22" height="22" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-            <rect width="512" height="512" rx="108" fill="#0D2933"/>
-            <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
-            <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#0D2933"/>
-          </svg>
-          <span class="footer-brand-name">MARUAN RAMOS VAZ</span>
-          <span class="footer-brand-role">Enfermeiro</span>
-        </div>
-
-        <nav class="footer-services-nav" aria-label="Navegação de atendimentos no rodapé">
-          <a href="../">Home</a>
-          <span class="nav-sep" aria-hidden="true">·</span>
-          <a href="../curativos-domiciliares-goiania/">Curativos</a>
-          <span class="nav-sep" aria-hidden="true">·</span>
-          <a href="../acompanhamento-de-enfermagem-goiania/">Acompanhamento</a>
-        </nav>
-      </div>
-
-      <div class="footer-meta-row">
-        <div class="footer-tagline">“Conhecimento para cuidar. Presença para acolher.”</div>
-        <div class="footer-location">Goiânia · Aparecida de Goiânia</div>
-        <div class="footer-copy">© 2026 Maruan Ramos Vaz. Todos os direitos reservados.</div>
-      </div>
-    </footer>
       </div>
     </section>
   </main>
 
+  <!-- ============ FOOTER PRINCIPAL DE LUXO (AUTÔNOMO) ============ -->
+  <footer class="footer-signature-editorial">
+    <div class="wrap">
+      <!-- Nível 01 -->
+      <div class="footer-level-upper">
+        <!-- Lado Esquerdo: Marca Institucional & Assinatura -->
+        <div class="footer-col-brand">
+          <div class="footer-brand-header">
+            <svg class="footer-brand-symbol" width="32" height="32" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+              <rect width="512" height="512" rx="108" fill="#0D2933"/>
+              <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
+              <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#0D2933"/>
+            </svg>
+            <div class="footer-brand-titles">
+              <span class="footer-brand-name">MARUAN RAMOS VAZ</span>
+              <span class="footer-brand-role">Enfermeiro</span>
+            </div>
+          </div>
+          <p class="footer-tagline-serif">
+            Conhecimento para cuidar.<br>Presença para acolher.
+          </p>
+        </div>
+
+        <!-- Lado Direito: Atendimentos -->
+        <div class="footer-col-nav">
+          <span class="footer-nav-heading">ATENDIMENTOS</span>
+          <ul class="footer-nav-list">
+            <li>
+              <a href="/cuidados-picc-goiania/">
+                <span>Cuidados com PICC</span>
+                <span class="nav-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="/curativos-domiciliares-goiania/">
+                <span>Curativos</span>
+                <span class="nav-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="/passagem-de-sonda-goiania/">
+                <span>Passagem de Sonda</span>
+                <span class="nav-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="/acompanhamento-de-enfermagem-goiania/">
+                <span>Acompanhamento</span>
+                <span class="nav-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hairline Divisória Única -->
+      <div class="footer-hairline" aria-hidden="true"></div>
+
+      <!-- Nível 02 -->
+      <div class="footer-level-lower">
+        <span class="footer-location-sub">GOIÂNIA · APARECIDA DE GOIÂNIA</span>
+        <span class="footer-copy-sub">© 2026 Maruan Ramos Vaz.<br class="footer-copy-br-mobile"> Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
   <!-- BARRA FIXA WHATSAPP MOBILE -->
   <div class="mobile-whatsapp-bar" id="mobileWhatsappBar">
-    <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20para%20passagem%20de%20sonda%20e%20gostaria%20de%20explicar%20minha%20necessidade." target="_blank" rel="noopener noreferrer" class="mobile-wa-btn" data-cta="mobile-bar-whatsapp">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
+    <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20atendimento%20relacionado%20%C3%A0%20passagem%20ou%20troca%20de%20sonda%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="mobile-wa-btn" data-cta="sondagem-mobile-whatsapp" data-conversion="whatsapp" data-service="sondagem" data-position="mobile_bar" data-location="goiania">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
       <span>Falar comigo no WhatsApp</span>
     </a>
   </div>

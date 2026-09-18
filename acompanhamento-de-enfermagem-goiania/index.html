@@ -14,14 +14,20 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Acompanhamento de Enfermagem em Goiânia | Maruan Ramos Vaz">
   <meta property="og:description" content="Acompanhamento particular de enfermagem em hospitais e domicílio para idosos, pacientes hospitalizados e pacientes em fase terminal em Goiânia e Aparecida de Goiânia.">
-  <meta property="og:image" content="../assets/images/maruan-sobre.jpg">
+  <meta property="og:image" content="/assets/images/maruan-editorial.jpg">
   <meta property="og:locale" content="pt_BR">
 
+  <!-- Twitter Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Acompanhamento de Enfermagem em Goiânia | Maruan Ramos Vaz">
+  <meta name="twitter:description" content="Acompanhamento particular de enfermagem em hospitais e domicílio para idosos, pacientes hospitalizados e pacientes em fase terminal em Goiânia e Aparecida de Goiânia.">
+  <meta name="twitter:image" content="/assets/images/maruan-editorial.jpg">
+
   <!-- Favicon System -->
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +35,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   
   <!-- CSS Principal e Estilos Dedicados Acompanhamento -->
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/landing-acompanhamento.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/landing-acompanhamento.css">
 
   <!-- Schema JSON-LD (Person & Service) -->
   <script type="application/ld+json">
@@ -42,7 +48,10 @@
         "@id": "#person",
         "name": "Maruan Ramos Vaz",
         "jobTitle": "Enfermeiro",
-        "alumniOf": "UNESC — Centro Universitário do Espírito Santo",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "UNESC — Centro Universitário do Espírito Santo"
+        },
         "knowsAbout": ["Enfermagem", "Acompanhamento Hospitalar", "Acompanhamento Domiciliar", "Cuidados Paliativos"]
       },
       {
@@ -74,7 +83,7 @@
   <!-- ============ HEADER / NAVEGAÇÃO ============ -->
   <header class="nav nav-landing-v2 nav-acompanhamento" id="siteNav">
     <div class="nav-inner">
-      <a href="../index.html" class="nav-brand" aria-label="Maruan Ramos Vaz - Home">
+      <a href="/" class="nav-brand" aria-label="Maruan Ramos Vaz - Home">
         <svg class="header-brand-symbol" width="18" height="18" viewBox="0 0 512 512" fill="none" aria-hidden="true">
           <rect width="512" height="512" rx="108" fill="#0D2933"/>
           <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
@@ -91,7 +100,7 @@
         <a href="#autoridade">Por que um enfermeiro?</a>
         <a href="#contratacao">Contratação</a>
         <a href="#faq">Dúvidas</a>
-        <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="nav-cta" data-cta="acompanhamento-header">Falar comigo</a>
+        <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="nav-cta" data-cta="acompanhamento-header-whatsapp" data-conversion="whatsapp" data-service="acompanhamento" data-position="header" data-location="goiania">Falar comigo</a>
       </nav>
 
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
@@ -125,7 +134,7 @@
             </p>
 
             <div class="hero-cinematic-cta-group">
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-primary-acompanhamento" data-cta="acompanhamento-hero">
+              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-primary-acompanhamento" data-cta="acompanhamento-hero-whatsapp" data-conversion="whatsapp" data-service="acompanhamento" data-position="hero" data-location="goiania">
                 Explicar a situação no WhatsApp →
               </a>
             </div>
@@ -138,7 +147,7 @@
           <!-- Lado Direito: Fotografia Dominante de Acolhimento -->
           <div class="hero-cinematic-photo-col">
             <div class="hero-cinematic-photo-wrap">
-              <img src="../assets/images/maruan-editorial.jpg" alt="Presença e acompanhamento particular de enfermagem" fetchpriority="high">
+              <img src="/assets/images/maruan-editorial.jpg" alt="Presença e acompanhamento particular de enfermagem" width="682" height="1024" fetchpriority="high" decoding="async">
             </div>
           </div>
 
@@ -184,13 +193,13 @@
           <!-- Camadas Fotográficas de Grande Escala -->
           <div class="situacao-photo-layers">
             <div class="situacao-photo-layer active" id="situacaoPhoto0">
-              <img src="../assets/images/acompanhamento-hospital.jpg" alt="Acompanhamento particular de enfermagem no hospital" loading="lazy">
+              <img src="/assets/images/acompanhamento-hospital.jpg" alt="Acompanhamento particular de enfermagem no hospital" width="1024" height="576" loading="lazy" decoding="async">
             </div>
             <div class="situacao-photo-layer" id="situacaoPhoto1">
-              <img src="../assets/images/acompanhamento-casa.jpg" alt="Acompanhamento particular de enfermagem em casa" loading="lazy">
+              <img src="/assets/images/acompanhamento-casa.jpg" alt="Acompanhamento particular de enfermagem em casa" width="1024" height="576" loading="lazy" decoding="async">
             </div>
             <div class="situacao-photo-layer" id="situacaoPhoto2">
-              <img src="../assets/images/acompanhamento-delicado.jpg" alt="Acompanhamento de enfermagem em momentos delicados" loading="lazy">
+              <img src="/assets/images/acompanhamento-delicado.jpg" alt="Acompanhamento de enfermagem em momentos delicados" width="1024" height="576" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -206,7 +215,7 @@
               <h3>NO HOSPITAL</h3>
               <p class="panel-lead">Quando um familiar está hospitalizado.</p>
               <p class="panel-desc">Acompanhamento particular de enfermagem durante o período de internação, garantindo vigilância técnica, suporte contínuo e tranquilidade para a família.</p>
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20no%20hospital." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-hospital">
+              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="acompanhamento-situacao-hospital" data-conversion="whatsapp" data-service="acompanhamento" data-position="situacao_hospital" data-location="goiania">
                 Explicar situação no hospital no WhatsApp →
               </a>
             </div>
@@ -217,7 +226,7 @@
               <h3>EM CASA</h3>
               <p class="panel-lead">Quando o acompanhamento acontece no ambiente familiar.</p>
               <p class="panel-desc">Acompanhamento particular de enfermagem em domicílio para idosos e outros pacientes, oferecendo segurança profissional dentro da rotina de casa.</p>
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20em%20casa." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-casa">
+              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="acompanhamento-situacao-casa" data-conversion="whatsapp" data-service="acompanhamento" data-position="situacao_casa" data-location="goiania">
                 Explicar situação em casa no WhatsApp →
               </a>
             </div>
@@ -228,7 +237,7 @@
               <h3>EM MOMENTOS DELICADOS</h3>
               <p class="panel-lead">Quando presença e atenção se tornam ainda mais importantes.</p>
               <p class="panel-desc">Acompanhamento de enfermagem em cuidados paliativos e fase terminal, priorizando conforto, alívio de dor e presença humanizada.</p>
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar%20em%20momento%20delicado." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="situacao-delicado">
+              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-situacao-wa" data-cta="acompanhamento-situacao-delicado" data-conversion="whatsapp" data-service="acompanhamento" data-position="situacao_delicado" data-location="goiania">
                 Explicar situação delicada no WhatsApp →
               </a>
             </div>
@@ -240,7 +249,7 @@
       </div>
     </section>
 
-    <!-- ============ DIREÇÃO DE ARTE EDITORIAL DE LUXO — TRANSIÇÃO COMERCIAL ============ -->
+    <!-- ============ DIREÇÃO DE ARTE EDITORIAL DE LUXO ============ -->
     <section class="sec-acompanhamento-identificacao" id="identificacao">
       <div class="wrap identificacao-editorial-container">
         
@@ -263,7 +272,7 @@
               </h2>
             </div>
 
-            <!-- Coluna Direita: Sistema Editorial de Tensões (Hairlines + Numeração) -->
+            <!-- Coluna Direita: Sistema Editorial de Tensões -->
             <div class="ato-01-col-tensoes">
               <div class="tensoes-editorial-list" aria-label="Fatores de restrição de tempo">
                 
@@ -332,7 +341,7 @@
 
             <!-- Coluna Direita: CTA Editorial de Luxo Integrado -->
             <div class="ato-02-col-cta">
-              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20meu%20familiar." target="_blank" rel="noopener noreferrer" class="cta-editorial-luxury" data-cta="acompanhamento-identificacao">
+              <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="cta-editorial-luxury" data-cta="acompanhamento-identificacao-whatsapp" data-conversion="whatsapp" data-service="acompanhamento" data-position="identificacao" data-location="goiania">
                 <div class="cta-header-line">
                   <span class="cta-title">CONVERSE DIRETAMENTE COM MARUAN</span>
                 </div>
@@ -358,7 +367,7 @@
           <!-- Retrato Editorial de Grande Escala de Maruan -->
           <div class="autoridade-photo-col">
             <div class="autoridade-photo-frame">
-              <img src="../assets/images/maruan-sobre.jpg" alt="Maruan Ramos Vaz — Enfermeiro" loading="lazy">
+              <img src="/assets/images/maruan-sobre.jpg" alt="Maruan Ramos Vaz — Enfermeiro" width="700" height="1024" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -397,7 +406,7 @@
       </div>
     </section>
 
-    <!-- ============ MOMENTO 04 — CONTRATAÇÃO ULTRARRÁPIDA ============ -->
+    <!-- ============ MOMENTO 04 — CONTRATAÇÃO ============ -->
     <section class="sec-acompanhamento-contratacao" id="contratacao">
       <div class="wrap">
         <div class="contratacao-head-block reveal" data-reveal>
@@ -428,14 +437,14 @@
         </div>
 
         <div class="contratacao-cta-wrap reveal" data-reveal>
-          <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-primary-acompanhamento" data-cta="acompanhamento-contratacao">
+          <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-primary-acompanhamento" data-cta="acompanhamento-contratacao-whatsapp" data-conversion="whatsapp" data-service="acompanhamento" data-position="contratacao" data-location="goiania">
             Falar com Maruan →
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ MOMENTO 05 — FAQ MINIMALISTA (6 OBJEÇÕES) ============ -->
+    <!-- ============ MOMENTO 05 — FAQ MINIMALISTA ============ -->
     <section class="sec-acompanhamento-faq" id="faq">
       <div class="wrap">
         <div class="faq-head-acompanhamento reveal" data-reveal>
@@ -513,7 +522,37 @@
       </div>
     </section>
 
-    <!-- ============ MOMENTO 06 — CTA FINAL CINEMATOGRÁFICO ============ -->
+    <!-- ============ SEÇÃO EDITORIAL · OUTROS ATENDIMENTOS ============ -->
+    <section class="sec-outros-atendimentos">
+      <div class="wrap">
+        <div class="outros-atendimentos-head reveal" data-reveal>
+          <div class="eyebrow-acompanhamento"><span class="folio">◇</span><span class="tick"></span>OUTROS ATENDIMENTOS</div>
+          <h3>Conheça outros atendimentos de enfermagem em Goiânia</h3>
+        </div>
+
+        <div class="outros-atendimentos-grid reveal" data-reveal>
+          <!-- Card Curativos -->
+          <a href="/curativos-domiciliares-goiania/" class="outro-atendimento-card" data-cta="acompanhamento-cross-curativos" data-conversion="navigation" data-service="curativos" data-position="outros_atendimentos" data-location="goiania">
+            <div class="outro-card-body">
+              <h4>Curativos Domiciliares</h4>
+              <p>Atendimento particular de enfermagem para realização, troca e acompanhamento de curativos em Goiânia e Aparecida de Goiânia.</p>
+            </div>
+            <span class="outro-card-link">Ver atendimento de curativos →</span>
+          </a>
+
+          <!-- Card Sondagem -->
+          <a href="/passagem-de-sonda-goiania/" class="outro-atendimento-card" data-cta="acompanhamento-cross-sondagem" data-conversion="navigation" data-service="sondagem" data-position="outros_atendimentos" data-location="goiania">
+            <div class="outro-card-body">
+              <h4>Passagem e Troca de Sonda</h4>
+              <p>Atendimento particular para sondagem vesical, nasogástrica, orogástrica e nasoentérica em Goiânia e Aparecida de Goiânia.</p>
+            </div>
+            <span class="outro-card-link">Ver atendimento de sonda →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
     <section class="sec-acompanhamento-final" id="contato">
       <div class="wrap">
         <div class="final-acompanhamento-content reveal" data-reveal>
@@ -522,49 +561,87 @@
           <p class="final-sub-serif">Me conte a situação.</p>
 
           <div style="margin-top: 28px;">
-            <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-dark-acompanhamento" data-cta="acompanhamento-final">
+            <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="btn-dark-acompanhamento" data-cta="acompanhamento-final-whatsapp" data-conversion="whatsapp" data-service="acompanhamento" data-position="final" data-location="goiania">
               Falar com Maruan no WhatsApp →
             </a>
           </div>
 
           <span class="final-micro-location">GOIÂNIA · APARECIDA DE GOIÂNIA</span>
         </div>
-
-    <footer class="footer-global-premium">
-      <div class="footer-brand-row">
-        <div class="footer-brand-main">
-          <svg class="footer-brand-symbol" width="22" height="22" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-            <rect width="512" height="512" rx="108" fill="#0D2933"/>
-            <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
-            <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#0D2933"/>
-          </svg>
-          <span class="footer-brand-name">MARUAN RAMOS VAZ</span>
-          <span class="footer-brand-role">Enfermeiro</span>
-        </div>
-
-        <nav class="footer-services-nav" aria-label="Navegação de atendimentos no rodapé">
-          <a href="../">Home</a>
-          <span class="nav-sep" aria-hidden="true">·</span>
-          <a href="../curativos-domiciliares-goiania/">Curativos</a>
-          <span class="nav-sep" aria-hidden="true">·</span>
-          <a href="../passagem-de-sonda-goiania/">Passagem de Sonda</a>
-        </nav>
-      </div>
-
-      <div class="footer-meta-row">
-        <div class="footer-tagline">“Conhecimento para cuidar. Presença para acolher.”</div>
-        <div class="footer-location">Goiânia · Aparecida de Goiânia</div>
-        <div class="footer-copy">© 2026 Maruan Ramos Vaz. Todos os direitos reservados.</div>
-      </div>
-    </footer>
       </div>
     </section>
   </main>
 
+  <!-- ============ FOOTER PRINCIPAL DE LUXO (AUTÔNOMO) ============ -->
+  <footer class="footer-signature-editorial">
+    <div class="wrap">
+      <!-- Nível 01 -->
+      <div class="footer-level-upper">
+        <!-- Lado Esquerdo: Marca Institucional & Assinatura -->
+        <div class="footer-col-brand">
+          <div class="footer-brand-header">
+            <svg class="footer-brand-symbol" width="32" height="32" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+              <rect width="512" height="512" rx="108" fill="#0D2933"/>
+              <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
+              <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#0D2933"/>
+            </svg>
+            <div class="footer-brand-titles">
+              <span class="footer-brand-name">MARUAN RAMOS VAZ</span>
+              <span class="footer-brand-role">Enfermeiro</span>
+            </div>
+          </div>
+          <p class="footer-tagline-serif">
+            Conhecimento para cuidar.<br>Presença para acolher.
+          </p>
+        </div>
+
+        <!-- Lado Direito: Atendimentos -->
+        <div class="footer-col-nav">
+          <span class="footer-nav-heading">ATENDIMENTOS</span>
+          <ul class="footer-nav-list">
+            <li>
+              <a href="/cuidados-picc-goiania/">
+                <span>Cuidados com PICC</span>
+                <span class="nav-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="/curativos-domiciliares-goiania/">
+                <span>Curativos</span>
+                <span class="nav-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="/passagem-de-sonda-goiania/">
+                <span>Passagem de Sonda</span>
+                <span class="nav-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="/acompanhamento-de-enfermagem-goiania/">
+                <span>Acompanhamento</span>
+                <span class="nav-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hairline Divisória Única -->
+      <div class="footer-hairline" aria-hidden="true"></div>
+
+      <!-- Nível 02 -->
+      <div class="footer-level-lower">
+        <span class="footer-location-sub">GOIÂNIA · APARECIDA DE GOIÂNIA</span>
+        <span class="footer-copy-sub">© 2026 Maruan Ramos Vaz.<br class="footer-copy-br-mobile"> Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
   <!-- BARRA FIXA WHATSAPP MOBILE -->
   <div class="mobile-whatsapp-bar" id="mobileWhatsappBar">
-    <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="mobile-wa-btn" data-cta="acompanhamento-mobile">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
+    <a href="https://wa.me/5527997740754?text=Ol%C3%A1%2C%20Maruan!%20Encontrei%20seu%20site%20procurando%20acompanhamento%20particular%20de%20enfermagem%20e%20gostaria%20de%20explicar%20a%20situa%C3%A7%C3%A3o%20do%20paciente." target="_blank" rel="noopener noreferrer" class="mobile-wa-btn" data-cta="acompanhamento-mobile-whatsapp" data-conversion="whatsapp" data-service="acompanhamento" data-position="mobile_bar" data-location="goiania">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.893 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.146 4.192 4.289-1.125z"/></svg>
       <span>Falar comigo no WhatsApp</span>
     </a>
   </div>
@@ -572,10 +649,10 @@
   <!-- Script global da aplicação (Empacotado pelo Vite) -->
   <script type="module" src="/scripts/main.js"></script>
 
-  <!-- Script Dedicado: Full-Viewport Scroll Storytelling & Reveal Único do Manifesto -->
+  <!-- Script Dedicado: Full-Viewport Scroll Storytelling -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Selector Interativo de Situações (Abas & Botões Selecionáveis)
+      // 1. Selector Interativo de Situações
       const tabBtns = document.querySelectorAll('.situacao-tab-btn');
       const textPanels = document.querySelectorAll('.situacao-text-panel');
       const photoLayers = document.querySelectorAll('.situacao-photo-layer');
@@ -585,19 +662,16 @@
           btn.addEventListener('click', () => {
             const targetIdx = parseInt(btn.getAttribute('data-tab'), 10);
 
-            // Alternar Estado dos Botões
             tabBtns.forEach((b, idx) => {
               const isActive = idx === targetIdx;
               b.classList.toggle('active', isActive);
               b.setAttribute('aria-selected', isActive ? 'true' : 'false');
             });
 
-            // Alternar Painel de Texto
             textPanels.forEach((panel, idx) => {
               panel.classList.toggle('active', idx === targetIdx);
             });
 
-            // Alternar Camada de Fotografia
             photoLayers.forEach((photo, idx) => {
               photo.classList.toggle('active', idx === targetIdx);
             });
@@ -605,7 +679,7 @@
         });
       }
 
-      // 2. Direção de Arte Editorial em 2 Atos (Single-Fire Observer com Coreografia Fluida em Estágios)
+      // 2. Direção de Arte Editorial em 2 Atos
       const identificacaoSec = document.getElementById('identificacao');
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -615,25 +689,20 @@
         const identificacaoObserver = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              // Estágio 0: Marcador 01 + Headline 1 do Conflito
               identificacaoSec.classList.add('is-revealed');
               
-              // Estágio 1 (180ms): Tensões 01-04 entram com hairlines
               setTimeout(() => {
                 identificacaoSec.classList.add('stage-1');
               }, 180);
 
-              // Estágio 2 (550ms): Virada em Newsreader Serif Italic "Mas nem sempre consegue."
               setTimeout(() => {
                 identificacaoSec.classList.add('stage-2');
               }, 550);
 
-              // Estágio 3 (920ms): Linha de Conexão avança com losango + Marcador 02 + Headline 2 da Solução
               setTimeout(() => {
                 identificacaoSec.classList.add('stage-3');
               }, 920);
 
-              // Estágio 4 (1250ms): CTA Editorial de Luxo + Microcopy entram como desfecho
               setTimeout(() => {
                 identificacaoSec.classList.add('stage-4');
               }, 1250);

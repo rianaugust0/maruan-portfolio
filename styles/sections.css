@@ -395,7 +395,7 @@
     );
   position: relative;
   overflow: hidden;
-  padding: 130px 0 60px;
+  padding: 110px 0 100px;
   color: var(--off);
 }
 
@@ -503,153 +503,213 @@
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%);
 }
 
-.footer-integrated {
-  margin-top: 100px;
-  padding-top: 32px;
-  border-top: 1px solid rgba(245, 246, 242, 0.14);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  position: relative;
-  z-index: 2;
-  font-size: 0.86rem;
-  color: rgba(245, 246, 242, 0.55);
-}
-
-.footer-integrated .brand-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-integrated .brand-name {
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--off);
-}
-
-.footer-integrated .tagline {
-  font-family: 'Newsreader', Georgia, serif;
-  font-style: italic;
-  color: var(--sage);
-  font-size: 0.95rem;
+.cta-watermark {
+  display: none !important;
 }
 
 /* ==========================================================================
-   GLOBAL PREMIUM FOOTER (UNIFICADO E EDITORIAL)
+   REDESIGNED GLOBAL FOOTER SIGNATURE (EDITORIAL DE LUXO)
    ========================================================================== */
-.footer-global-premium {
-  background: var(--deep);
-  color: rgba(245, 246, 242, 0.65);
-  padding: 60px 0 40px;
-  border-top: 1px solid rgba(220, 231, 234, 0.12);
-  font-size: 0.88rem;
+.footer-signature-editorial {
+  background: #091B22;
+  color: var(--off);
+  padding: 64px 0 44px;
+  border-top: 1.5px solid rgba(220, 231, 234, 0.12);
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  margin-top: 0;
+  width: 100%;
 }
 
-.footer-global-premium .footer-brand-row {
+
+.footer-level-upper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid rgba(220, 231, 234, 0.1);
+  align-items: flex-start;
+  gap: 60px;
+  padding-bottom: 36px;
 }
 
-.footer-global-premium .footer-brand-main {
+/* Lado Esquerdo: Marca Institucional & Assinatura */
+.footer-col-brand {
+  max-width: 440px;
+}
+
+.footer-brand-header {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  margin-bottom: 16px;
 }
 
-.footer-global-premium .footer-brand-symbol {
-  width: 22px;
-  height: 22px;
+.footer-brand-symbol {
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.footer-global-premium .footer-brand-name {
+.footer-brand-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-brand-name {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   color: var(--white);
   text-transform: uppercase;
-  font-size: 0.88rem;
+  line-height: 1.2;
 }
 
-.footer-global-premium .footer-brand-role {
-  font-size: 0.78rem;
+.footer-brand-role {
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   color: var(--sage);
   text-transform: uppercase;
-  padding-left: 8px;
-  border-left: 1px solid rgba(220, 231, 234, 0.2);
+  opacity: 0.9;
+  line-height: 1.2;
 }
 
-.footer-global-premium .footer-services-nav {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.footer-global-premium .footer-services-nav a {
-  color: var(--slate);
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: color 0.25s ease;
-}
-
-.footer-global-premium .footer-services-nav a:hover {
-  color: var(--accent-sage-on-dark);
-}
-
-.footer-global-premium .footer-services-nav .nav-sep {
-  opacity: 0.35;
+.footer-tagline-serif {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
   color: var(--sage);
+  line-height: 1.45;
+  margin: 0;
+  font-weight: 400;
 }
 
-.footer-global-premium .footer-meta-row {
+/* Lado Direito: Navegação Editorial de Atendimentos */
+.footer-col-nav {
+  min-width: 240px;
+}
+
+.footer-nav-heading {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: rgba(220, 231, 234, 0.45);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer-nav-list li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-top: 28px;
-  font-size: 0.82rem;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(220, 231, 234, 0.08);
+  color: var(--slate);
+  text-decoration: none;
+  font-size: 0.94rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 0.25s ease, border-color 0.25s ease;
 }
 
-.footer-global-premium .footer-tagline {
-  font-family: 'Newsreader', Georgia, serif;
-  font-style: italic;
-  font-size: 1.02rem;
+.footer-nav-list li a .nav-arrow {
+  font-size: 0.85rem;
   color: var(--sage);
+  transition: transform 0.25s ease, color 0.25s ease;
 }
 
-.footer-global-premium .footer-location {
+.footer-nav-list li a:hover {
+  color: var(--white);
+  border-bottom-color: rgba(159, 195, 179, 0.35);
+}
+
+.footer-nav-list li a:hover .nav-arrow {
+  transform: translate(2.5px, -2.5px);
+  color: var(--accent-sage-on-dark);
+}
+
+/* Hairline Divisória Única */
+.footer-hairline {
+  height: 1px;
+  background: rgba(220, 231, 234, 0.12);
+  width: 100%;
+}
+
+/* Nível Inferior (Level 2) */
+.footer-level-lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  font-size: 0.76rem;
+  color: rgba(220, 231, 234, 0.42);
+  letter-spacing: 0.04em;
+}
+
+.footer-location-sub {
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(220, 231, 234, 0.5);
-  font-size: 0.75rem;
 }
 
-.footer-global-premium .footer-copy {
-  opacity: 0.55;
+.footer-copy-sub {
+  font-weight: 400;
 }
 
-@media (max-width: 768px) {
-  .footer-global-premium .footer-brand-row,
-  .footer-global-premium .footer-meta-row {
+.footer-copy-br-mobile {
+  display: none;
+}
+
+/* Mobile Composition (Left-Aligned Editorial Stack) */
+@media (max-width: 820px) {
+  .footer-signature-editorial {
+    padding-top: 48px;
+    padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+    margin-top: 40px;
+  }
+
+  .footer-level-upper {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 0;
+    padding-bottom: 0;
+  }
+
+  .footer-col-brand {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(220, 231, 234, 0.12);
+  }
+
+  .footer-col-nav {
+    width: 100%;
+    min-width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .footer-level-lower {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 20px;
+  }
+
+  .footer-copy-br-mobile {
+    display: block;
   }
 }
 
@@ -699,3 +759,93 @@
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
   }
 }
+
+/* ============ SEÇÃO EDITORIAL: OUTROS ATENDIMENTOS ============ */
+.sec-outros-atendimentos {
+  padding: 80px 0;
+  background: var(--off);
+  border-top: 1px solid var(--hair);
+}
+
+.outros-atendimentos-head {
+  margin-bottom: 40px;
+}
+
+.outros-atendimentos-head h3 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--deep);
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
+.outros-atendimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.outro-atendimento-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 4px;
+  border: 1px solid var(--hair);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.outro-atendimento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--sage);
+}
+
+.outro-card-body h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--deep);
+  margin: 0 0 8px 0;
+}
+
+.outro-card-body p {
+  font-size: 0.95rem;
+  color: var(--graphite);
+  opacity: 0.84;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.outro-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--petrol);
+}
+
+.outro-atendimento-card:hover .outro-card-link {
+  color: var(--deep);
+}
+
+@media (max-width: 768px) {
+  .outros-atendimentos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Accessible Focus Ring Styling */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2.5px solid var(--petrol);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+

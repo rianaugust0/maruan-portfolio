@@ -16,3 +16,8 @@
   from = "/acompanhamento-de-enfermagem-goiania"
   to = "/acompanhamento-de-enfermagem-goiania/index.html"
   status = 200
+
+[[redirects]]
+  from = "/cuidados-picc-goiania"
+  to = "/cuidados-picc-goiania/index.html"
+  status = 200

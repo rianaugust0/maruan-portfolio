@@ -9,6 +9,7 @@ export default defineConfig({
         curativos: resolve(__dirname, 'curativos-domiciliares-goiania/index.html'),
         sondagem: resolve(__dirname, 'passagem-de-sonda-goiania/index.html'),
         acompanhamento: resolve(__dirname, 'acompanhamento-de-enfermagem-goiania/index.html'),
+        picc: resolve(__dirname, 'cuidados-picc-goiania/index.html'),
       },
     },
   },
