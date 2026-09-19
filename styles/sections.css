@@ -849,3 +849,341 @@ summary:focus-visible {
   border-radius: 2px;
 }
 
+/* ==========================================================================
+   SEÇÃO COMPACTA · REFERÊNCIAS TÉCNICAS E NORMATIVAS (PÁGINAS DE SERVIÇO)
+   ========================================================================== */
+.sec-normativas-editorial {
+  background: var(--off);
+  padding: 48px 0 56px;
+  position: relative;
+  border-top: 1px solid var(--hair);
+}
+
+.normativas-hairline {
+  height: 1px;
+  background: var(--hair);
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.normativas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.normativas-header {
+  max-width: 780px;
+}
+
+.normativas-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--petrol);
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.normativas-eyebrow .mark-diamond {
+  width: 7px;
+  height: 7px;
+}
+
+.normativas-intro {
+  font-size: 0.94rem;
+  color: var(--graphite);
+  opacity: 0.84;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.normativas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px 40px;
+  padding-top: 8px;
+}
+
+.normativas-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.normativas-group-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--petrol);
+  margin: 0;
+}
+
+.normativas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.normativa-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: var(--petrol);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  opacity: 0.88;
+}
+
+.normativa-link:hover {
+  color: var(--accent-sage-on-light);
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.normativa-arrow {
+  font-size: 0.8rem;
+  color: var(--accent-sage-on-light);
+  transition: transform 0.2s ease;
+}
+
+.normativa-link:hover .normativa-arrow {
+  transform: translate(2px, -2px);
+}
+
+/* ==========================================================================
+   ATUAÇÃO PROFISSIONAL & MODAL DE REFERÊNCIAS (HOME)
+   ========================================================================== */
+.sec-atuacao-profissional-home {
+  background: var(--off);
+  padding: 40px 0 48px;
+  position: relative;
+  border-top: 1px solid var(--hair);
+}
+
+.atuacao-home-hairline {
+  height: 1px;
+  background: var(--hair);
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.atuacao-home-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.atuacao-home-content {
+  max-width: 780px;
+}
+
+.atuacao-home-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--petrol);
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.atuacao-home-eyebrow .mark-diamond {
+  width: 7px;
+  height: 7px;
+}
+
+.atuacao-home-text {
+  font-size: 0.92rem;
+  color: var(--graphite);
+  opacity: 0.84;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.atuacao-home-link {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--petrol);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.atuacao-home-link:hover {
+  color: var(--accent-sage-on-light);
+  transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .atuacao-home-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+/* Modal de Referências Técnicas */
+.ref-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 41, 51, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ref-modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ref-modal-container {
+  background: var(--white);
+  border-radius: 6px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 48px rgba(13, 41, 51, 0.25);
+  overflow: hidden;
+  transform: translateY(16px);
+  transition: transform 0.3s ease;
+}
+
+.ref-modal-backdrop.is-open .ref-modal-container {
+  transform: translateY(0);
+}
+
+.ref-modal-header {
+  padding: 24px 28px 18px;
+  border-bottom: 1px solid var(--hair);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ref-modal-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--petrol);
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.ref-modal-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--deep);
+  margin: 0;
+}
+
+.ref-modal-close {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--petrol);
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.ref-modal-close:hover {
+  opacity: 1;
+}
+
+.ref-modal-body {
+  padding: 24px 28px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ref-modal-intro {
+  font-size: 0.9rem;
+  color: var(--graphite);
+  opacity: 0.85;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ref-modal-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ref-modal-sec h4 {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--petrol);
+  margin: 0 0 8px 0;
+}
+
+.ref-modal-sec ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ref-modal-sec li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: var(--petrol);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.ref-modal-sec li a:hover {
+  color: var(--accent-sage-on-light);
+  text-decoration: underline;
+}
+
+.ref-modal-sec li a .arrow {
+  font-size: 0.78rem;
+  color: var(--accent-sage-on-light);
+}
+
+

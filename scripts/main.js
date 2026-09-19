@@ -90,3 +90,41 @@ if (mobileBar && ctaFinal && 'IntersectionObserver' in window) {
 
   barObserver.observe(ctaFinal);
 }
+
+// Modal de Referências Técnicas na Home
+const btnOpenRefModal = document.getElementById('btnOpenRefModal');
+const btnCloseRefModal = document.getElementById('btnCloseRefModal');
+const refModalBackdrop = document.getElementById('refModalBackdrop');
+
+if (btnOpenRefModal && refModalBackdrop) {
+  const openModal = () => {
+    refModalBackdrop.classList.add('is-open');
+    refModalBackdrop.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    refModalBackdrop.classList.remove('is-open');
+    refModalBackdrop.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  btnOpenRefModal.addEventListener('click', openModal);
+
+  if (btnCloseRefModal) {
+    btnCloseRefModal.addEventListener('click', closeModal);
+  }
+
+  refModalBackdrop.addEventListener('click', (e) => {
+    if (e.target === refModalBackdrop) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && refModalBackdrop.classList.contains('is-open')) {
+      closeModal();
+    }
+  });
+}
+
