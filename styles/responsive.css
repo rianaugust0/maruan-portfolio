@@ -24,25 +24,18 @@
   .nav-brand {
     max-width: calc(100% - 52px);
     margin-right: 0;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
   }
 
-  .nav-brand .txt {
-    overflow: hidden;
+  .nav-brand-logo-desktop {
+    display: none;
   }
 
-  .nav-brand .name {
-    font-size: 0.92rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .nav-brand .role {
-    font-size: 0.62rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  .nav-brand-logo-mobile {
+    display: block;
+    height: 34px;
+    width: auto;
   }
 
   .nav-links {

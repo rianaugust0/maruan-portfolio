@@ -542,6 +542,15 @@
   margin-bottom: 16px;
 }
 
+.footer-brand-logo {
+  height: 76px;
+  max-height: 84px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 20px;
+}
+
 .footer-brand-symbol {
   width: 32px;
   height: 32px;

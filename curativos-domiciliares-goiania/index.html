@@ -11,8 +11,8 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MWG4KZHF');</script>
   <!-- End Google Tag Manager -->
-  <title>Curativos Domiciliares em Goiânia | Enfermeiro Maruan Ramos Vaz</title>
-  <meta name="description" content="Precisa realizar ou trocar um curativo em casa? Atendimento particular de enfermagem para curativos em Goiânia e Aparecida de Goiânia. Fale com Maruan.">
+  <title>Curativos Domiciliares em Goiânia | MR Life Care</title>
+  <meta name="description" content="Precisa realizar ou trocar um curativo em casa? Atendimento particular de enfermagem para curativos em Goiânia e Aparecida de Goiânia com a MR Life Care.">
   <meta name="robots" content="index, follow">
 
   <!-- TODO: Adicionar canonical após definição do domínio oficial -->
@@ -20,22 +20,23 @@
   
   <!-- Open Graph / Meta Social -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Curativos Domiciliares em Goiânia | Enfermeiro Maruan Ramos Vaz">
-  <meta property="og:description" content="Atendimento particular de enfermagem para troca e acompanhamento de curativos no conforto do seu domicílio em Goiânia e Aparecida de Goiânia.">
+  <meta property="og:site_name" content="MR Life Care — Clínica de Atendimento Domiciliar">
+  <meta property="og:title" content="Curativos Domiciliares em Goiânia | MR Life Care">
+  <meta property="og:description" content="Atendimento particular de enfermagem para troca e acompanhamento de curativos no conforto do seu domicílio com a MR Life Care.">
   <meta property="og:image" content="/assets/images/curativo-hero.png">
   <meta property="og:locale" content="pt_BR">
 
   <!-- Twitter Metadata -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Curativos Domiciliares em Goiânia | Enfermeiro Maruan Ramos Vaz">
-  <meta name="twitter:description" content="Atendimento particular de enfermagem para troca e acompanhamento de curativos no conforto do seu domicílio em Goiânia e Aparecida de Goiânia.">
+  <meta name="twitter:title" content="Curativos Domiciliares em Goiânia | MR Life Care">
+  <meta name="twitter:description" content="Atendimento particular de enfermagem para troca e acompanhamento de curativos no conforto do seu domicílio com a MR Life Care.">
   <meta name="twitter:image" content="/assets/images/curativo-hero.png">
 
-  <!-- Favicon System -->
+  <!-- Favicon & Brand Icons -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/brand/mr-life-care-favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/brand/mr-life-care-favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/brand/mr-life-care-apple-touch-icon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,23 +53,39 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "MedicalBusiness",
+        "@id": "#clinic",
+        "name": "MR Life Care",
+        "alternateName": "MR Life Care — Clínica de Atendimento Domiciliar",
+        "description": "Clínica de atendimento domiciliar de enfermagem em Goiânia e Aparecida de Goiânia.",
+        "founder": {
+          "@type": "Person",
+          "@id": "#person"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "name": "MR Life Care — Clínica de Atendimento Domiciliar",
+        "description": "Atendimentos particulares de enfermagem em Goiânia e Aparecida de Goiânia."
+      },
+      {
         "@type": "Person",
         "@id": "#person",
         "name": "Maruan Ramos Vaz",
         "jobTitle": "Enfermeiro",
+        "description": "Enfermeiro responsável pela MR Life Care que realiza atendimentos particulares de enfermagem em Goiânia e Aparecida de Goiânia.",
         "alumniOf": {
           "@type": "EducationalOrganization",
           "name": "UNESC — Centro Universitário do Espírito Santo"
-        },
-        "knowsAbout": ["Enfermagem", "Curativos Domiciliares", "Tratamento de Feridas"]
+        }
       },
       {
         "@type": "Service",
-        "name": "Atendimento Particular de Curativos Domiciliares",
-        "serviceType": "Enfermagem Domiciliar",
+        "name": "Atendimento Particular de Enfermagem",
+        "serviceType": "Enfermagem Domiciliar e Hospitalar",
         "provider": {
-          "@type": "Person",
-          "@id": "#person"
+          "@type": "MedicalBusiness",
+          "@id": "#clinic"
         },
         "areaServed": [
           {
@@ -79,8 +96,7 @@
             "@type": "City",
             "name": "Aparecida de Goiânia"
           }
-        ],
-        "description": "Atendimento particular de enfermagem para realização, troca e acompanhamento de curativos em Goiânia e Aparecida de Goiânia."
+        ]
       }
     ]
   }
@@ -97,16 +113,9 @@
 <!-- ============ HEADER V2 DE SERVIÇO DEDICADO ============ -->
 <header class="nav nav-landing-v2" id="siteNav">
   <div class="nav-inner">
-    <a href="/" class="nav-brand" aria-label="Maruan Ramos Vaz - Home">
-      <svg class="header-brand-symbol" width="18" height="18" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-        <rect width="512" height="512" rx="108" fill="#0D2933"/>
-        <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
-        <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#0D2933"/>
-      </svg>
-      <span class="txt">
-        <span class="name">MARUAN RAMOS VAZ</span>
-        <span class="sub-service-tag">CURATIVOS DOMICILIARES</span>
-      </span>
+    <a href="/" class="nav-brand" aria-label="MR Life Care - Clínica de Atendimento Domiciliar">
+      <img src="/brand/mr-life-care-logo-horizontal-light.svg" alt="MR Life Care - Clínica de Atendimento Domiciliar" class="nav-brand-logo-desktop" width="265" height="50">
+      <img src="/brand/mr-life-care-symbol-light-bg.png" alt="MR Life Care" class="nav-brand-logo-mobile" width="38" height="38">
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Navegação da página">
       <a href="#atendimento">Posso ajudar</a>
@@ -464,15 +473,7 @@
       <!-- Lado Esquerdo: Marca Institucional & Assinatura -->
       <div class="footer-col-brand">
         <div class="footer-brand-header">
-          <svg class="footer-brand-symbol" width="32" height="32" viewBox="0 0 512 512" fill="none" aria-hidden="true">
-            <rect width="512" height="512" rx="108" fill="#0D2933"/>
-            <path d="M 256 68 L 444 256 L 256 444 L 68 256 Z" fill="#9FC3B3"/>
-            <path d="M 256 168 L 332 244 L 332 340 L 256 264 L 180 340 L 180 244 Z" fill="#0D2933"/>
-          </svg>
-          <div class="footer-brand-titles">
-            <span class="footer-brand-name">MARUAN RAMOS VAZ</span>
-            <span class="footer-brand-role">Enfermeiro</span>
-          </div>
+          <img src="/brand/mr-life-care-logo-horizontal-dark.svg" alt="MR Life Care - Clínica de Atendimento Domiciliar" class="footer-brand-logo" width="270" height="52">
         </div>
         <p class="footer-tagline-serif">
           Conhecimento para cuidar.<br>Presença para acolher.
@@ -517,7 +518,7 @@
     <!-- Nível 02 -->
     <div class="footer-level-lower">
       <span class="footer-location-sub">GOIÂNIA · APARECIDA DE GOIÂNIA</span>
-      <span class="footer-copy-sub">© 2026 Maruan Ramos Vaz.<br class="footer-copy-br-mobile"> Todos os direitos reservados.</span>
+      <span class="footer-copy-sub">© 2026 MR Life Care · Maruan Ramos Vaz.<br class="footer-copy-br-mobile"> Todos os direitos reservados.</span>
     </div>
   </div>
 </footer>

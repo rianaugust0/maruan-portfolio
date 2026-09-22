@@ -30,47 +30,24 @@ header.nav.scrolled {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
   flex-shrink: 0;
   margin-right: 32px;
+  text-decoration: none;
 }
 
-.nav-brand .mark {
-  width: 9px;
-  height: 9px;
-  border: 1.5px solid var(--petrol);
-  transform: rotate(45deg);
-  flex-shrink: 0;
+.nav-brand-logo-desktop {
+  height: 58px;
+  max-height: 64px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
-.header-brand-symbol {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-}
-
-.nav-brand .txt {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.nav-brand .name {
-  font-weight: 700;
-  font-size: 0.98rem;
-  letter-spacing: 0.02em;
-  color: var(--deep);
-  white-space: nowrap;
-}
-
-.nav-brand .role {
-  font-size: 0.68rem;
-  color: var(--petrol);
-  opacity: 0.65;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  white-space: nowrap;
+.nav-brand-logo-mobile {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: none;
 }
 
 .nav-links {
