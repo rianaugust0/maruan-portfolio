@@ -1,0 +1,90 @@
+/* ============ BRAND INTRO / LOGO REVEAL (MR LIFE CARE) ============ */
+.brand-intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background-color: var(--deep);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: auto;
+  opacity: 1;
+  transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.45s ease;
+}
+
+html.skip-brand-intro .brand-intro-overlay,
+.brand-intro-overlay.dismissed {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  display: none !important;
+}
+
+.brand-intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+  max-width: 600px;
+}
+
+.intro-symbol {
+  width: 76px;
+  height: auto;
+  margin-bottom: 22px;
+  opacity: 0;
+  transform: scale(0.92) translateY(8px);
+  animation: introSymbolReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.intro-title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: introTextReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.65s forwards;
+}
+
+.intro-tagline {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(0.68rem, 1.8vw, 0.82rem);
+  font-weight: 800;
+  color: var(--sage);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(6px);
+  animation: introTextReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) 1.05s forwards;
+}
+
+@keyframes introSymbolReveal {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes introTextReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-intro-overlay {
+    display: none !important;
+  }
+}

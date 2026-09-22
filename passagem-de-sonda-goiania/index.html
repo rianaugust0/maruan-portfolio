@@ -108,6 +108,20 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+<!-- ============ BRAND INTRO OVERLAY (PRIMEIRO ACESSO DA SESSÃO) ============ -->
+<script>
+  if (sessionStorage.getItem('mr_life_care_intro_shown') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('skip-brand-intro');
+  }
+</script>
+<div class="brand-intro-overlay" id="brandIntroOverlay" aria-hidden="true">
+  <div class="brand-intro-content">
+    <img src="/brand/mr-life-care-symbol-dark-bg.png" alt="MR+ Symbol" class="intro-symbol" width="76" height="76">
+    <div class="intro-title">MR Life Care</div>
+    <span class="intro-tagline">CLÍNICA DE ATENDIMENTO DOMICILIAR</span>
+  </div>
+</div>
+
   <!-- ============ HEADER / NAVEGAÇÃO ============ -->
   <header class="nav nav-landing-v2 nav-sondagem" id="siteNav">
     <div class="nav-inner">

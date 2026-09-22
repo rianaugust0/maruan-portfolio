@@ -1,6 +1,39 @@
 // Ativar sistema de revelação apenas com JavaScript carregado com sucesso
 document.documentElement.classList.add('js-ready');
 
+// ============ BRAND INTRO CONTROLLER (MR LIFE CARE) ============
+(function initBrandIntro() {
+  const introOverlay = document.getElementById('brandIntroOverlay');
+  if (!introOverlay) return;
+
+  const storageKey = 'mr_life_care_intro_shown';
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const alreadyShown = sessionStorage.getItem(storageKey);
+
+  if (alreadyShown || reduceMotion) {
+    document.documentElement.classList.add('skip-brand-intro');
+    introOverlay.classList.add('dismissed');
+    introOverlay.style.display = 'none';
+    return;
+  }
+
+  // Sequência cinematográfica curta (~1.75s total)
+  const TOTAL_DURATION = 1750;
+  const FADE_OUT_DURATION = 450;
+
+  setTimeout(() => {
+    introOverlay.classList.add('dismissed');
+    try {
+      sessionStorage.setItem(storageKey, 'true');
+    } catch (e) {
+      // Fallback gracioso caso sessionStorage esteja bloqueado
+    }
+    setTimeout(() => {
+      introOverlay.style.display = 'none';
+    }, FADE_OUT_DURATION);
+  }, TOTAL_DURATION);
+})();
+
 // Header Scroll State
 const nav = document.getElementById('siteNav');
 const onScroll = () => {
