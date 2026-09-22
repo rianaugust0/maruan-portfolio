@@ -261,6 +261,22 @@
     width: 100%;
     justify-content: center;
   }
+
+  /* Footer Brand Logo Mobile Responsiveness */
+  .footer-col-brand {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer-brand-logo {
+    height: auto;
+    max-height: 56px;
+    width: 100%;
+    max-width: 320px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -278,11 +294,21 @@
     min-height: 48px;
     box-sizing: border-box;
   }
+
+  .footer-brand-logo {
+    max-width: 290px;
+    max-height: 52px;
+  }
 }
 
 @media (max-width: 390px) {
   .wrap {
     padding: 0 16px;
+  }
+
+  .footer-brand-logo {
+    max-width: 250px;
+    max-height: 46px;
   }
 }
 
