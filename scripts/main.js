@@ -17,9 +17,9 @@ document.documentElement.classList.add('js-ready');
     return;
   }
 
-  // Sequência cinematográfica curta (~1.75s total)
-  const TOTAL_DURATION = 1750;
-  const FADE_OUT_DURATION = 450;
+  // Sequência cinematográfica orgânica (~3.3s de revelação + 0.8s fade out)
+  const TOTAL_DURATION = 3300;
+  const FADE_OUT_DURATION = 800;
 
   setTimeout(() => {
     introOverlay.classList.add('dismissed');
