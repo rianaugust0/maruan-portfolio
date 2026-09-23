@@ -664,39 +664,105 @@
 }
 
 /* ==========================================================================
-   BREAKPOINTS RESPONSIVOS (960px, 680px, 430px, 390px, 375px, 360px)
+   BREAKPOINTS RESPONSIVOS (960px, 680px, 430px, 390px, 375px)
    ========================================================================== */
 @media (max-width: 960px) {
+  .hero-curativos-v3 {
+    padding: 84px 0 40px;
+  }
+
   .hero-curativos-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 24px;
+  }
+
+  .hero-curativos-title .title-main {
+    font-size: clamp(1.8rem, 6.8vw, 2.3rem);
+    line-height: 1.15;
+  }
+
+  .hero-curativos-title .title-sub-serif {
+    font-size: clamp(1.15rem, 4.5vw, 1.4rem);
+  }
+
+  .hero-curativos-lead {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+
+  .hero-curativos-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .btn-primary-v2 {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+  }
+
+  .procedure-frame {
+    aspect-ratio: 16 / 9;
+    max-height: 260px;
+    border-radius: 4px;
+  }
+
+  .sec-curativos-ajudar {
+    padding: 48px 0;
+  }
+
+  .curativos-list-editorial {
+    margin-bottom: 28px;
   }
 
   .curativo-row-item {
     grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 24px 12px;
+    gap: 6px;
+    padding: 18px 0;
+    align-items: flex-start;
   }
 
   .curativo-row-item .item-num {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 8px;
+  }
+
+  .curativo-row-item .item-info h3 {
+    font-size: 1.12rem;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  .curativo-row-item .item-info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 4px;
   }
 
   .uncertainty-microbox {
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px 20px;
-    gap: 20px;
+    padding: 20px 18px;
+    gap: 16px;
   }
 
   .uncertainty-microbox .btn-primary-v2 {
     width: 100%;
   }
 
+  .sec-curativos-como-funciona {
+    padding: 48px 0;
+  }
+
   .como-funciona-flow-editorial {
     grid-template-columns: 1fr;
-    gap: 32px;
-    padding-top: 32px;
+    gap: 20px;
+    padding-top: 20px;
   }
 
   .step-editorial-row:not(:last-child)::after {
@@ -704,27 +770,67 @@
   }
 
   .step-editorial-row {
-    padding-bottom: 24px;
+    padding-bottom: 18px;
+    gap: 4px;
     border-bottom: 1px solid var(--hair);
   }
 
   .step-num-serif {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 8px;
+    line-height: 1;
+  }
+
+  .step-body-editorial h3 {
+    font-size: 1.05rem;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  .step-body-editorial p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 4px;
+  }
+
+  .sec-curativos-quem-atende {
+    padding: 48px 0;
   }
 
   .quem-atende-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 24px;
   }
 
   .quem-atende-photo {
     height: auto;
-    aspect-ratio: 4/5;
+    aspect-ratio: 4/3;
+    max-height: 280px;
+    min-height: auto;
+  }
+
+  .quem-atende-photo img {
+    object-position: center 15%;
+  }
+
+  .sec-curativos-faq {
+    padding: 48px 0;
+  }
+
+  .faq-summary-v2 {
+    padding: 16px 4px;
+    font-size: 1rem;
+  }
+
+  .sec-curativos-cta-final {
+    padding: 56px 0 calc(84px + env(safe-area-inset-bottom, 0px));
   }
 
   .fechamento-dark-layout-v2 {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
   }
 
   .brand-mark-box {
@@ -733,13 +839,13 @@
     align-items: flex-start;
     text-align: left;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
+    padding-top: 16px;
   }
 }
 
 @media (max-width: 680px) {
   .hero-curativos-v3 {
-    padding: 100px 0 50px;
+    padding: 80px 0 40px;
   }
 
   .footer-v2-integrated {
@@ -750,7 +856,7 @@
 
 @media (max-width: 430px) {
   .hero-curativos-title .title-main {
-    font-size: 1.95rem;
+    font-size: clamp(1.7rem, 6.5vw, 2.05rem);
   }
 
   .hero-curativos-cta-group {
@@ -764,11 +870,12 @@
 }
 
 @media (max-width: 390px) {
-  .wrap {
+  .landing-curativos-v2 .wrap {
     padding: 0 16px;
   }
 
   .hero-curativos-content {
-    padding-top: 12px;
+    padding-top: 8px;
   }
 }
+

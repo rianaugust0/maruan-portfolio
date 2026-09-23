@@ -1116,9 +1116,10 @@
   .hero-picc-cinematic {
     display: block;
     min-height: auto;
-    padding: 95px 0 0 0;
+    padding: 84px 0 0 0;
     background: #F3F4F0;
   }
+
 
   .hero-cinematic-container {
     padding: 0 20px;

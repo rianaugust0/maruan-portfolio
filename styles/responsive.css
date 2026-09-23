@@ -1,20 +1,21 @@
-/* ============ RESPONSIVIDADE ============ */
+/* ============ RESPONSIVIDADE (DESIGN MOBILE DEDICADO) ============ */
 @media (max-width: 960px) {
   .signature-line {
     display: none;
   }
 
+  /* Header Compacto e Offset Garantido */
   header.nav {
-    padding: 12px 0;
-    background: rgba(245, 246, 242, 0.96);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 0;
+    background: rgba(245, 246, 242, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 
   .nav-inner {
     padding: 0 20px;
     width: 100%;
-    height: 52px;
+    height: 48px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -35,6 +36,7 @@
   .nav-brand-logo-mobile {
     display: block;
     height: 34px;
+    max-height: 36px;
     width: auto;
   }
 
@@ -43,12 +45,12 @@
     top: 0;
     right: 0;
     height: 100vh;
-    width: min(78vw, 320px);
+    width: min(82vw, 320px);
     background: var(--off);
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px 32px 32px;
-    gap: 26px;
+    padding: 96px 28px 32px;
+    gap: 24px;
     transform: translateX(100%);
     visibility: hidden;
     transition: transform 0.3s cubic-bezier(.2, .7, .2, 1), visibility 0.3s ease;
@@ -62,55 +64,67 @@
   }
 
   .nav-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    box-sizing: border-box;
     z-index: 1002;
   }
 
-  /* Hero Unified Mobile */
+  /* Hero Unified Mobile - Offset do Header (Sem sobreposição) */
   .hero-unified {
-    padding-top: 72px;
+    padding-top: 76px;
   }
 
   .hero-top-wrap {
     flex-direction: column;
     min-height: auto;
-    padding-top: 20px;
-    padding-bottom: 32px;
+    padding-top: 12px;
+    padding-bottom: 24px;
   }
 
   .hero-content-col {
     width: 100%;
-    padding: 16px 0 24px;
+    padding: 8px 0 16px;
   }
 
   .hero-eyebrow-commercial {
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.75rem, 6.8vw, 2.25rem);
+    line-height: 1.18;
+    margin-bottom: 12px;
+  }
+
+  .hero h1 .sub-serif {
+    font-size: 0.88em;
+    margin-top: 4px;
+  }
+
+  .hero-sub {
+    font-size: 0.94rem;
+    line-height: 1.5;
+    margin-top: 4px;
     margin-bottom: 16px;
+    max-width: 100%;
   }
 
   .hero-actions {
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     width: 100%;
   }
 
   .btn-fill {
-    width: 100%;
-    min-height: 52px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.98rem;
-    font-weight: 700;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  .btn-ghost {
     width: 100%;
     min-height: 48px;
     display: inline-flex;
@@ -118,82 +132,147 @@
     justify-content: center;
     text-align: center;
     font-size: 0.92rem;
+    font-weight: 700;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 14px 20px;
+  }
+
+  .btn-ghost {
+    width: 100%;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.88rem;
     font-weight: 600;
     border: 1px solid var(--hair);
     border-radius: 4px;
     box-sizing: border-box;
     color: var(--petrol);
     background: transparent;
+    padding: 10px 16px;
   }
 
   .hero-micro-info {
     margin-top: 0;
-    padding-top: 20px;
-    border-top: 1.5px solid var(--hair);
-    font-size: 0.82rem;
+    padding-top: 12px;
+    border-top: 1px solid var(--hair);
+    font-size: 0.76rem;
   }
 
+  /* Fotografia Maruan Hero Enquadrada no Mobile */
   .hero-photo-col {
     position: relative;
     top: auto;
     right: auto;
     bottom: auto;
     width: 100%;
-    height: auto;
+    max-height: 280px;
+    aspect-ratio: 16/9;
     margin-top: 16px;
     clip-path: none;
     border-radius: 4px;
     overflow: hidden;
+    background: var(--deep);
   }
 
   .hero-photo-col img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
+    object-position: center 14%;
   }
 
-  /* Acesso Rápido aos Serviços Mobile */
+  /* Acesso Rápido aos Serviços Mobile (Composição Editorial Compacta) */
   .hero-services-quick {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  .services-quick-header {
+    margin-bottom: 24px;
+  }
+
+  .services-quick-header h2 {
+    font-size: clamp(1.6rem, 5.2vw, 2.1rem);
+  }
+
+  .services-quick-list {
+    margin-bottom: 28px;
   }
 
   .service-quick-row {
     grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 24px 12px;
+    gap: 6px;
+    padding: 20px 0;
+    align-items: flex-start;
   }
 
   .service-num {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
+  }
+
+  .service-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  .service-info p {
+    font-size: 0.9rem;
+    line-height: 1.48;
+    margin-top: 4px;
   }
 
   .service-link-editorial {
     align-self: flex-start;
-    margin-top: 8px;
+    margin-top: 6px;
+    font-size: 0.88rem;
   }
 
   .service-uncertainty-box {
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px 20px;
-    gap: 20px;
+    padding: 20px 18px;
+    gap: 16px;
+  }
+
+  .service-uncertainty-box h4 {
+    font-size: 1.05rem;
+  }
+
+  .service-uncertainty-box p {
+    font-size: 0.9rem;
   }
 
   .service-uncertainty-box .btn-fill {
     width: 100%;
   }
 
-  /* Como Funciona Mobile (Sequência Editorial) */
+  /* Como Funciona Mobile (Fluxo Horizontal/Vertical Integrado) */
   .como-funciona {
-    padding: 64px 0;
+    padding: 48px 0;
+  }
+
+  .como-funciona-header {
+    margin-bottom: 28px;
+  }
+
+  .como-funciona-header h2 {
+    font-size: clamp(1.7rem, 5.5vw, 2.2rem);
   }
 
   .como-funciona-flow-editorial {
     grid-template-columns: 1fr;
-    gap: 36px;
-    padding-top: 32px;
+    gap: 20px;
+    padding-top: 20px;
   }
 
   .step-editorial-row:not(:last-child)::after {
@@ -201,68 +280,143 @@
   }
 
   .step-editorial-row {
-    padding-bottom: 24px;
+    padding-bottom: 18px;
+    gap: 4px;
     border-bottom: 1px solid var(--hair);
   }
 
   .step-num-serif {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
+    line-height: 1;
+  }
+
+  .step-body-editorial h3 {
+    font-size: 1.05rem;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: 4px;
+  }
+
+  .step-body-editorial p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 4px;
   }
 
   /* Quem Vai Te Atender Mobile */
   .quem-atende {
-    padding: 70px 0;
+    padding: 48px 0;
   }
 
   .quem-atende-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 24px;
   }
 
   .quem-atende-photo {
     height: auto;
-    aspect-ratio: 4/5;
+    aspect-ratio: 4/3;
+    max-height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .quem-atende-photo img {
+    object-position: center 15%;
+  }
+
+  .quem-atende-content h2 {
+    font-size: clamp(1.7rem, 5.5vw, 2.2rem);
+    margin-bottom: 16px;
+  }
+
+  .bio-lead {
+    font-size: 0.94rem;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+
+  .credentials-block {
+    padding: 16px;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .cred-tag {
+    font-size: 0.68rem;
+  }
+
+  .cred-title {
+    font-size: 0.88rem;
+  }
+
+  .quem-atende-signature blockquote {
+    font-size: 1.3rem;
+    line-height: 1.3;
   }
 
   /* FAQ Mobile */
   .faq-section {
-    padding: 70px 0;
+    padding: 48px 0;
+  }
+
+  .faq-header {
+    margin-bottom: 28px;
+  }
+
+  .faq-header h2 {
+    font-size: clamp(1.7rem, 5.5vw, 2.2rem);
   }
 
   .faq-question {
-    padding: 20px 0;
+    padding: 16px 0;
+    font-size: 1rem;
   }
 
-  /* Contato Mobile */
+  /* Contato & CTA Final Mobile */
   .cta-final {
-    padding: 80px 0 48px;
+    padding: 56px 0 40px;
   }
 
   .cta-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 28px;
   }
 
   .cta-text {
     padding-right: 0;
   }
 
+  .cta-text h2 {
+    font-size: clamp(1.8rem, 6vw, 2.3rem);
+    margin-bottom: 18px;
+  }
+
   .cta-photo-blend {
     height: auto;
-    aspect-ratio: 4/3;
+    aspect-ratio: 16/9;
+    max-height: 240px;
+    border-radius: 4px;
+    overflow: hidden;
   }
 
   .cta-photo-blend img {
+    object-position: center 15%;
     mask-image: none;
     -webkit-mask-image: none;
   }
 
   .btn-whatsapp-brand {
     width: 100%;
+    min-height: 48px;
     justify-content: center;
+    font-size: 0.92rem;
   }
 
-  /* Footer Brand Logo Mobile Responsiveness */
+  /* Footer Brand Logo & Spacing Mobile */
   .footer-col-brand {
     max-width: 100%;
     width: 100%;
@@ -270,12 +424,17 @@
 
   .footer-brand-logo {
     height: auto;
-    max-height: 56px;
+    max-height: 52px;
     width: 100%;
-    max-width: 320px;
+    max-width: 290px;
     object-fit: contain;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+  }
+
+  /* Safe Area Inferior para compensar a barra fixa do WhatsApp */
+  .footer-signature-editorial {
+    padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
   }
 }
 
@@ -285,7 +444,7 @@
   }
 
   .hero h1 {
-    font-size: clamp(1.9rem, 7.5vw, 2.4rem);
+    font-size: clamp(1.7rem, 6.8vw, 2.1rem);
   }
 
   .btn-fill,
@@ -296,8 +455,8 @@
   }
 
   .footer-brand-logo {
-    max-width: 290px;
-    max-height: 52px;
+    max-width: 270px;
+    max-height: 48px;
   }
 }
 
@@ -307,8 +466,12 @@
   }
 
   .footer-brand-logo {
-    max-width: 250px;
-    max-height: 46px;
+    max-width: 240px;
+    max-height: 44px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.6rem, 6.5vw, 1.95rem);
   }
 }
 
@@ -317,3 +480,4 @@
     left: calc((100vw - 1200px) / 2 - 40px);
   }
 }
+
