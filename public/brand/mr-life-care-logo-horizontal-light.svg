@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="170" viewBox="0 0 1180 170">
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="170" viewBox="0 0 1260 170">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;1,400&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap');
       .brand-title { font-family: 'Newsreader', Georgia, serif; font-size: 72px; font-weight: 500; fill: #0D2933; letter-spacing: -0.01em; }
-      .brand-sub { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; font-size: 19px; font-weight: 800; fill: #262E31; letter-spacing: 0.12em; text-transform: uppercase; }
+      .brand-sub { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; font-size: 19px; font-weight: 800; fill: #262E31; letter-spacing: 0.09em; text-transform: uppercase; }
       .brand-line { stroke: #0D2933; stroke-width: 3; stroke-opacity: 0.3; }
     </style>
   </defs>
