@@ -75,14 +75,18 @@
   }
 
   /* Hero Unified Mobile - Offset do Header (Sem sobreposição) */
-  .hero-unified {
-    padding-top: 76px;
+  .hero-unified,
+  .hero-picc-cinematic,
+  .hero-curativos-v3,
+  .sec-hero-sondagem,
+  .sec-hero-acompanhamento {
+    padding-top: calc(96px + env(safe-area-inset-top, 0px)) !important;
   }
 
   .hero-top-wrap {
     flex-direction: column;
     min-height: auto;
-    padding-top: 12px;
+    padding-top: 20px;
     padding-bottom: 24px;
   }
 
