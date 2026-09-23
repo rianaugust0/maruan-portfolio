@@ -173,11 +173,11 @@
     right: auto;
     bottom: auto;
     width: 100%;
-    max-height: 340px;
-    aspect-ratio: 4/3;
+    max-height: 480px;
+    aspect-ratio: 3/4;
     margin-top: 16px;
     clip-path: none;
-    border-radius: 4px;
+    border-radius: 6px;
     overflow: hidden;
     background: var(--deep);
   }
@@ -322,9 +322,9 @@
 
   .quem-atende-photo {
     height: auto;
-    aspect-ratio: 4/3.8;
-    max-height: 360px;
-    border-radius: 4px;
+    aspect-ratio: 3/4;
+    max-height: 460px;
+    border-radius: 6px;
     overflow: hidden;
   }
 
@@ -402,9 +402,9 @@
 
   .cta-photo-blend {
     height: auto;
-    aspect-ratio: 4/3;
-    max-height: 320px;
-    border-radius: 4px;
+    aspect-ratio: 3/4;
+    max-height: 440px;
+    border-radius: 6px;
     overflow: hidden;
   }
 

@@ -806,8 +806,8 @@
 
   .quem-atende-photo {
     height: auto;
-    aspect-ratio: 4/3;
-    max-height: 280px;
+    aspect-ratio: 3/4;
+    max-height: 440px;
     min-height: auto;
   }
 
