@@ -169,8 +169,8 @@
     right: auto;
     bottom: auto;
     width: 100%;
-    max-height: 280px;
-    aspect-ratio: 16/9;
+    max-height: 340px;
+    aspect-ratio: 4/3;
     margin-top: 16px;
     clip-path: none;
     border-radius: 4px;
@@ -183,7 +183,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center 14%;
+    object-position: center top;
   }
 
   /* Acesso Rápido aos Serviços Mobile (Composição Editorial Compacta) */
@@ -318,14 +318,15 @@
 
   .quem-atende-photo {
     height: auto;
-    aspect-ratio: 4/3;
-    max-height: 300px;
+    aspect-ratio: 4/3.8;
+    max-height: 360px;
     border-radius: 4px;
     overflow: hidden;
   }
 
   .quem-atende-photo img {
-    object-position: center 15%;
+    object-fit: cover;
+    object-position: center top;
   }
 
   .quem-atende-content h2 {
@@ -397,14 +398,15 @@
 
   .cta-photo-blend {
     height: auto;
-    aspect-ratio: 16/9;
-    max-height: 240px;
+    aspect-ratio: 4/3;
+    max-height: 320px;
     border-radius: 4px;
     overflow: hidden;
   }
 
   .cta-photo-blend img {
-    object-position: center 15%;
+    object-fit: cover;
+    object-position: center top;
     mask-image: none;
     -webkit-mask-image: none;
   }

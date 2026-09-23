@@ -1268,7 +1268,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center top;
   }
 
   /* Credenciais: Flex-wrap e min-width seguro */
